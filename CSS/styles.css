@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "oxygenbold";
+  src: url("fonts/oxygen/oxygen-bold-webfont.woff2") format("woff2"),
+    url("fonts/oxygen/oxygen-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oxygen";
+  src: url("fonts/oxygen/oxygen-regular-webfont.woff2") format("woff2"),
+    url("fonts/oxygen/oxygen-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spectralbold";
+  src: url("fonts/spectral/spectral-bold-webfont.woff2") format("woff2"),
+    url("fonts/spectral/spectral-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spectralitalic";
+  src: url("fonts/spectral/spectral-italic-webfont.woff2") format("woff2"),
+    url("fonts/spectral/spectral-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "spectralregular";
+  src: url("fonts/spectral/spectral-regular-webfont.woff2") format("woff2"),
+    url("fonts/spectral/spectral-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
