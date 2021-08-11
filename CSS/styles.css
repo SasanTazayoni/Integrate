@@ -23,17 +23,30 @@
 }
 
 @font-face {
-  font-family: "spectralitalic";
-  src: url("fonts/spectral/spectral-italic-webfont.woff2") format("woff2"),
-    url("fonts/spectral/spectral-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
   font-family: "spectralregular";
   src: url("fonts/spectral/spectral-regular-webfont.woff2") format("woff2"),
     url("fonts/spectral/spectral-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+  --color-primary: #ff4e4e;
+  --color-secondary: #ffa558;
+  --color-accent: #30d5c8;
+  --color-headings: #000000;
+  --color-body: #082121;
+}
+
+body {
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 78, 78, 1) 0%,
+    rgba(255, 165, 88, 1) 10%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 165, 88, 1) 90%,
+    rgba(255, 78, 78, 1) 100%
+  );
 }
