@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "oxygenbold";
+  font-family: "oxygen";
   src: url("fonts/oxygen/oxygen-bold-webfont.woff2") format("woff2"),
     url("fonts/oxygen/oxygen-bold-webfont.woff") format("woff");
   font-weight: bold;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "spectralbold";
+  font-family: "spectral";
   src: url("fonts/spectral/spectral-bold-webfont.woff2") format("woff2"),
     url("fonts/spectral/spectral-bold-webfont.woff") format("woff");
   font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "spectralregular";
+  font-family: "spectral";
   src: url("fonts/spectral/spectral-regular-webfont.woff2") format("woff2"),
     url("fonts/spectral/spectral-regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -34,11 +34,19 @@
   --color-primary: #ff4e4e;
   --color-secondary: #ffa558;
   --color-accent: #30d5c8;
-  --color-headings: #000000;
-  --color-body: #082121;
+  --color-headings: #310033;
+  --color-body: #000000;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
+  color: var(--color-body);
+  font-family: "oxygen", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
   height: 100vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -49,4 +57,46 @@ body {
     rgba(255, 165, 88, 1) 90%,
     rgba(255, 78, 78, 1) 100%
   );
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-family: "spectral", Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
 }
