@@ -31,12 +31,16 @@
 }
 
 :root {
-  --color-primary: #ff4e4e;
-  --color-secondary: #ffa558;
-  --color-accent: #30d5c8;
-  --color-headings: #310033;
-  --color-body: #000000;
+  --color-primary: #40e0d0;
+  --color-secondary: #1fadff;
+  --color-accent: #ff1717;
+  --color-headings: #000000;
+  --color-body: #3c0042;
 }
+
+/* #25db5c */
+
+/* Typography */
 
 html {
   font-size: 62.5%;
@@ -45,18 +49,8 @@ html {
 body {
   color: var(--color-body);
   font-family: "oxygen", Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   line-height: 1.5;
-  height: 100vh;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 78, 78, 1) 0%,
-    rgba(255, 165, 88, 1) 10%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 165, 88, 1) 90%,
-    rgba(255, 78, 78, 1) 100%
-  );
 }
 
 h1,
@@ -68,15 +62,15 @@ h3 {
 }
 
 h1 {
-  font-size: 7.5rem;
+  font-size: 7.6rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 p {
@@ -85,18 +79,58 @@ p {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 8.4rem;
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 4.8rem;
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
+  }
+}
+
+/* Icons */
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
