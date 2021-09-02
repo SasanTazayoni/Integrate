@@ -282,8 +282,17 @@ a {
 
 /* Media */
 
+.media {
+  display: flex;
+}
+
 .media__body {
+  display: flex;
   margin: 0 2rem;
+}
+
+.media__title {
+  margin-left: 2rem;
 }
 
 .media__btn {
