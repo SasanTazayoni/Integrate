@@ -32,7 +32,7 @@
 
 :root {
   --color-primary: #58ffff;
-  --color-secondary: #1fadff;
+  --color-secondary: #7f7aff;
   --color-accent: #40e0d0;
   --color-headings: #000000;
   --color-body: #3c0042;
@@ -338,4 +338,28 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Blocks */
+
+.block {
+  padding: 6rem 2rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--secondary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.block--secondary .block__heading {
+  color: #fff;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
 }
