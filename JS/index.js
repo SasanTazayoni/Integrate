@@ -1,13 +1,3 @@
-// function menu() {
-//     var list = document.getElementsByClassName('list')[0]
-//     var display = list.style.display
-//     if (!display) {
-//         list.style.display = 'block'
-//     } else {
-//         list.style.display = ''
-//     } 
-// }
-
 const collapsibles = document.querySelectorAll(".collapsible");
 
 collapsibles.forEach((item) =>
@@ -35,15 +25,3 @@ document.querySelectorAll('.nav__item').forEach(li => {
     event.stopPropagation();
   })
 })*/
-
-// const dropDown = () => {
-//   const collapsible__icon = document.querySelector('.collapsible__icon');
-//   const collapsible__content = document.querySelector('.collapsible__content');
-
-//   collapsible__icon.addEventListener('click', () => {
-//     collapsible__content.classList.toggle("collapsible--expanded");
-
-//   });
-// }
-
-// dropDown();
