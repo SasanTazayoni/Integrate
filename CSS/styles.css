@@ -580,7 +580,6 @@ a {
   box-shadow: 0 0 20px black;
   margin: 1rem;
   padding: 1rem;
-  transition: translate 0.1s;
 }
 
 .hero__heading {

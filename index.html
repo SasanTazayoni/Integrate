@@ -27,8 +27,9 @@
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#home"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
 
         <li>
@@ -39,8 +40,9 @@
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#about"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
 
         <li>
@@ -51,8 +53,9 @@
                 <svg class="icon services-icon">
                   <use xlink:href="images/integratesprite.svg#services"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
 
         <li>
@@ -63,23 +66,22 @@
                 <svg class="icon training-icon">
                   <use xlink:href="images/integratesprite.svg#training"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
 
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary nav__button"{
-                height: 60px;
-                width: 150px;
-              }">
+              <button class="btn btn--primary nav__button">
                 FAQ
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#faq"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
 
         <li>
@@ -90,8 +92,9 @@
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#contact"></use>
                 </svg>
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </a>
         </li>
       </ul>
 
@@ -155,13 +158,25 @@
 
     <section class="block">
       <div class="container hero__container">
-        <img class="hero__image" src="images/largelogo.png" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/largelogo@2x.webp 2x, images/largelogo@3x.webp 3x"
+          />
+          <source
+            type="image/png"
+            srcset="images/largelogo@2x.png 2x, images/largelogo@3x.png 3x"
+          />
+          <img class="hero__image" src="images/largelogo.png" alt="" />
+        </picture>
         <a href="#">
-          <header class="block__header hero__nameplate btn--secondary btn--long">
+          <header
+            class="block__header hero__nameplate btn--secondary btn--long"
+          >
             <h1 class="hero__heading">
-               Simon Burgess
-               <span class="hero__qualifications">(PgDip, MBACP)</span>
-             </h1>
+              Simon Burgess
+              <span class="hero__qualifications">(PgDip, MBACP)</span>
+            </h1>
             <p class="hero__tagline">Psychotherapist based in London, UK</p>
           </header>
         </a>
