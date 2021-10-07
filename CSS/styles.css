@@ -324,6 +324,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .grid--1x3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -369,10 +375,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .block .grid--1x2 {
-    grid-template-columns: 1fr auto;
-  }
-
   .block__content {
     text-align: left;
   }
@@ -428,6 +430,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 1;
+  box-shadow: 1rem 0 1rem black, -1rem 0 1rem black;
 }
 
 .nav__button {
