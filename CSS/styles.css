@@ -61,14 +61,18 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-headings);
   font-family: "spectral", Arial, Helvetica, sans-serif;
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
+h2,
+h3 {
+  color: var(--color-headings);
+}
+
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -89,7 +93,7 @@ p {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   h2 {
@@ -205,11 +209,6 @@ a {
   white-space: nowrap;
 }
 
-.btn-nav {
-  height: 60px;
-  width: 150px;
-}
-
 .btn--primary {
   background: var(--color-primary);
 }
@@ -220,6 +219,7 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
+  color: #fff;
 }
 
 .btn--secondary:hover {
@@ -234,23 +234,14 @@ a {
   background: #56f5e5;
 }
 
-/* .btn--outline {
-  background: #fff;
+.btn--primary,
+.btn--accent {
   color: var(--color-headings);
-  border: 3px solid var(--color-secondary);
 }
-
-.btn--outline:hover,
-.btn--outline:hover .icon {
-  background: var(--color-secondary);
-  color: #fff;
-  fill: #fff;
-} */
 
 .btn--primary,
 .btn--secondary,
 .btn--accent {
-  color: var(--color-headings);
   transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
     transform 0.5s ease-in-out;
 }
@@ -269,10 +260,6 @@ a {
 .btn--stretched {
   padding-left: 6rem;
   padding-right: 6rem;
-}
-
-.btn--long {
-  width: calc(100% - 4rem);
 }
 
 .btn--long:hover {
@@ -377,7 +364,7 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -443,6 +430,11 @@ a {
   z-index: 1;
 }
 
+.nav__button {
+  height: 60px;
+  width: 150px;
+}
+
 .nav h3 {
   font-size: 3rem;
 }
@@ -450,12 +442,12 @@ a {
 .nav__brand {
   align-items: center;
   display: flex;
+  height: auto;
   text-align: center;
-  width: 120px;
+  width: 150px;
 }
 
 .nav__logo {
-  font-size: 3rem;
   height: 70px;
   width: 70px;
 }
@@ -463,6 +455,7 @@ a {
 .nav__logo__title {
   color: #fff;
   font-weight: 400;
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -472,7 +465,6 @@ a {
 
 .nav__list {
   margin-top: 2rem;
-  text-align: center;
   width: 100%;
 }
 
@@ -517,7 +509,8 @@ a {
 @media screen and (min-width: 768px) {
   .nav {
     flex-wrap: nowrap;
-    padding: 0 2rem;
+    padding: 2rem;
+    padding-top: 0;
   }
 
   .nav__toggler,
@@ -540,11 +533,13 @@ a {
 
 @media screen and (min-width: 1296px) {
   .nav {
-    height: 14.6rem;
+    height: 16.6rem;
+    padding: 2rem;
   }
 
   .nav__list-widescreen {
-    align-items: center;
+    /* align-items: center; */
+    display: flex;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: none;
   }
@@ -553,45 +548,110 @@ a {
     font-size: 2.4rem;
   }
 
-  .nav > .nav__toggler,
+  /* .nav > .nav__toggler,
   .nav > .nav__list {
     order: 2;
   }
+
   .nav > .nav__list-widescreen {
     order: 3;
-  }
+  } */
 
   .nav__brand {
     align-items: flex-start;
-    padding-top: 1rem;
   }
 }
 
 /* Hero */
 
 .hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 16rem;
   position: relative;
   text-align: center;
+  width: 100%;
+}
+
+.hero__nameplate {
+  border: solid 2px var(--color-primary);
+  border-radius: 30px;
+  box-shadow: 0 0 20px black;
+  margin: 1rem;
+  padding: 1rem;
+  transition: translate 0.1s;
+}
+
+.hero__heading {
+  margin: 0;
+}
+
+.hero__qualifications {
+  font-size: 45%;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .hero__image {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 120px);
 }
 
-.hero__image-text {
-  position: absolute;
-}
+@media screen and (max-width: 440px) {
+  h1 {
+    font-size: 4rem;
+  }
 
-@media (max-width: 1295px) {
-  .hero__image {
-    height: calc(100vh - 310px);
+  .hero__tagline {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero__image {
     height: auto;
+    max-width: 440px;
     width: 100%;
+  }
+
+  .hero__nameplate {
+    max-width: 440px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__image {
+    height: 90vh;
+  }
+
+  .hero__nameplate {
+    position: absolute;
+    top: 320px;
+    max-width: none;
+    transform: translateX(-50%);
+    width: 700px;
+  }
+
+  .hero__nameplate:hover {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  .hero__container {
+    padding-top: 12rem;
+  }
+
+  .hero__image {
+    height: 100vh;
+  }
+
+  .hero__nameplate {
+    width: 840px;
   }
 }

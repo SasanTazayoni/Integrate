@@ -22,7 +22,7 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary btn-nav">
+              <button class="btn btn--primary nav__button">
                 Home
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#home"></use>
@@ -34,7 +34,7 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary btn-nav">
+              <button class="btn btn--primary nav__button">
                 About
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#about"></use>
@@ -46,7 +46,7 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary btn-nav">
+              <button class="btn btn--primary nav__button">
                 Services
                 <svg class="icon services-icon">
                   <use xlink:href="images/integratesprite.svg#services"></use>
@@ -58,7 +58,7 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary btn-nav">
+              <button class="btn btn--primary nav__button">
                 Training
                 <svg class="icon training-icon">
                   <use xlink:href="images/integratesprite.svg#training"></use>
@@ -70,7 +70,10 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--primary btn-nav">
+              <button class="btn btn--primary nav__button"{
+                height: 60px;
+                width: 150px;
+              }">
                 FAQ
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#faq"></use>
@@ -82,7 +85,7 @@
         <li>
           <a href="#">
             <div class="icon-btn">
-              <button class="btn btn--accent btn-nav">
+              <button class="btn btn--accent nav__button">
                 Contact
                 <svg class="icon">
                   <use xlink:href="images/integratesprite.svg#contact"></use>
@@ -152,8 +155,16 @@
 
     <section class="block">
       <div class="container hero__container">
-        <h1 class="hero__image-text">Some content</h1>
-        <img class="hero__image" src="images/largelogoalt.png" alt="" />
+        <img class="hero__image" src="images/largelogo.png" alt="" />
+        <a href="#">
+          <header class="block__header hero__nameplate btn--secondary btn--long">
+            <h1 class="hero__heading">
+               Simon Burgess
+               <span class="hero__qualifications">(PgDip, MBACP)</span>
+             </h1>
+            <p class="hero__tagline">Psychotherapist based in London, UK</p>
+          </header>
+        </a>
       </div>
     </section>
 
