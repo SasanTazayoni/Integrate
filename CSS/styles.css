@@ -375,6 +375,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .block .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
   .block__content {
     text-align: left;
   }
