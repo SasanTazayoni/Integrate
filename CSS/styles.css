@@ -31,9 +31,9 @@
 }
 
 :root {
-  --color-primary: #58ffff;
+  --color-primary: #00f7f7;
   --color-secondary: #7f7aff;
-  --color-accent: #40e0d0;
+  --color-accent: #32d2c6;
   --color-headings: #000000;
   --color-body: #3c0042;
 }
@@ -214,7 +214,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #c7ffff;
+  background: #58ffff;
 }
 
 .btn--secondary {
@@ -223,7 +223,11 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #66d9ff;
+  background: #73aeff;
+}
+
+.btn--secondary > .icon {
+  fill: #fff;
 }
 
 .btn--accent {
@@ -231,7 +235,7 @@ a {
 }
 
 .btn--accent:hover {
-  background: #56f5e5;
+  background: #3decde;
 }
 
 .btn--primary,
@@ -352,12 +356,20 @@ a {
 }
 
 .block--secondary {
-  background: var(--color-secondary);
+  background: linear-gradient(#fff, #7f7aff 30%);
   color: #fff;
 }
 
 .block--secondary .block__heading {
   color: #fff;
+}
+
+.block--accent {
+  background: linear-gradient(#fff, #3decde 30%);
+}
+
+.block--white {
+  background: linear-gradient(#3decde, #fff 30%);
 }
 
 .block .icon-btn {
