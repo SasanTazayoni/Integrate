@@ -365,10 +365,12 @@ a {
 }
 
 .block--accent {
+  background: #3decde;
   background: linear-gradient(#fff, #3decde 30%);
 }
 
 .block--white {
+  background: #fff;
   background: linear-gradient(#3decde, #fff 30%);
 }
 
@@ -673,3 +675,5 @@ a {
     width: 840px;
   }
 }
+
+/* Background Images */
