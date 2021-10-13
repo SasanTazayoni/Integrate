@@ -476,6 +476,10 @@ a {
   width: 150px;
 }
 
+.nav__brand-group {
+  align-self: center;
+}
+
 .nav__brand {
   display: flex;
   flex-direction: row;
