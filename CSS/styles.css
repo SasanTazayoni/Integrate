@@ -136,6 +136,11 @@ a {
   transition: fill 0.25s;
 }
 
+.icon--black {
+  fill: black;
+  transition: fill 0.25s;
+}
+
 .icon--left {
   transform: rotate(90deg);
 }
