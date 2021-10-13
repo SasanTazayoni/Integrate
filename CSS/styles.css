@@ -543,7 +543,7 @@ a {
 .collapsible--expanded .nav__toggler {
   opacity: 1;
   box-shadow: 0 0 40px 25px #fff;
-
+}
 
 @media screen and (max-width: 370px) {
   .nav__toggler {
