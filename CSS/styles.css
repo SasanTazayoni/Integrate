@@ -453,8 +453,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 1.8rem;
-  padding: 2rem;
-  padding-bottom: 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -466,16 +464,11 @@ a {
   width: 150px;
 }
 
-.nav h3 {
-  font-size: 3rem;
-}
-
 .nav__brand {
-  align-items: center;
   display: flex;
+  flex-direction: row;
   height: auto;
-  text-align: center;
-  width: 150px;
+  padding: 2rem;
 }
 
 .nav__logo {
@@ -484,10 +477,13 @@ a {
 }
 
 .nav__logo__title {
+  align-self: center;
   color: #fff;
   font-weight: 400;
   letter-spacing: 1px;
   margin: 0;
+  padding-left: 1rem;
+  width: 120px;
 }
 
 .nav .btn {
@@ -540,8 +536,6 @@ a {
 @media screen and (min-width: 768px) {
   .nav {
     flex-wrap: nowrap;
-    padding: 2rem;
-    padding-top: 0;
   }
 
   .nav__toggler,
@@ -564,8 +558,7 @@ a {
 
 @media screen and (min-width: 1296px) {
   .nav {
-    height: 16.6rem;
-    padding: 2rem;
+    height: auto;
   }
 
   .nav__list-widescreen {
@@ -573,10 +566,6 @@ a {
     display: flex;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: none;
-  }
-
-  .nav h3 {
-    font-size: 2.4rem;
   }
 
   /* .nav > .nav__toggler,
@@ -614,7 +603,8 @@ a {
 }
 
 .hero__heading {
-  margin: 0;
+  font-style: italic;
+  margin: 0.5rem;
 }
 
 .hero__qualifications {
@@ -625,11 +615,18 @@ a {
   font-size: 2rem;
   font-style: italic;
   letter-spacing: 1px;
+  margin: 0;
+}
+
+.hero__button {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-bottom: 0;
 }
 
 .hero__image {
-  height: calc(100vh - 120px);
+  display: none;
 }
 
 @media screen and (max-width: 440px) {
@@ -643,12 +640,6 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .hero__image {
-    height: auto;
-    max-width: 440px;
-    width: 100%;
-  }
-
   .hero__nameplate {
     max-width: 440px;
   }
@@ -656,6 +647,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero__image {
+    display: initial;
     height: 90vh;
   }
 
@@ -674,7 +666,7 @@ a {
 
 @media screen and (min-width: 1296px) {
   .hero__container {
-    padding-top: 12rem;
+    padding-top: 6rem;
   }
 
   .hero__image {
