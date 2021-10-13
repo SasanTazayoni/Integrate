@@ -238,31 +238,43 @@
 
     <section class="background__image"></section>
 
-    <article class="block block--white">
-      <div class="container">
-        <header class="block__header">
-          <h2>How I can help you</h2>
-        </header>
-        <div class="grid grid--1x2">
+    <section class="block block--accent">
+      <div class="container testimonials__container">
+        <h2>Testimonials</h2>
+        <div class="testimonials__card">
+          <svg class="icon icon--secondary testimonials__icon-left">
+            <use xlink:href="images/integratesprite.svg#left-quote"></use>
+          </svg>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            ratione quod repellat doloribus repudiandae atque impedit illum
-            quaerat at tenetur blanditiis assumenda perferendis nemo provident
-            reiciendis qui incidunt, ducimus voluptas laborum, similique porro
-            iusto eaque beatae laboriosam! Minus ad cupiditate illo natus
-            tenetur explicabo fuga eaque ex iste, mollitia ipsum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
+            Sapiente voluptatibus placeat quisquam deserunt quia architecto
+            voluptatem ad corporis aspernatur non. Modi error cumque maxime
+            voluptatem, doloribus maiores quis unde quibusdam aperiam mollitia
+            alias, ipsum quaerat expedita, autem asperiores.
           </p>
-          <div class="icon-btn">
-            <button class="btn btn--secondary">
-              Learn More
-              <svg class="icon">
-                <use xlink:href="images/integratesprite.svg#right-arrow"></use>
-              </svg>
-            </button>
-          </div>
+          <svg class="icon icon--secondary testimonials__icon-right">
+            <use xlink:href="images/integratesprite.svg#right-quote"></use>
+          </svg>
+        </div>
+        <div class="grid testimonials__slider">
+          <svg class="icon icon--secondary icon--left testimonials__button">
+            <use xlink:href="images/integratesprite.svg#chevron"></use>
+          </svg>
+          <input
+            class="testimonials__button"
+            type="radio"
+            name="testimonial"
+            checked="checked"
+          />
+          <input class="testimonials__button" type="radio" name="testimonial" />
+          <input class="testimonials__button" type="radio" name="testimonial" />
+          <input class="testimonials__button" type="radio" name="testimonial" />
+          <svg class="icon icon--secondary icon--right testimonials__button">
+            <use xlink:href="images/integratesprite.svg#chevron"></use>
+          </svg>
         </div>
       </div>
-    </article>
+    </section>
 
     <script src="JS/index.js"></script>
   </body>
