@@ -437,6 +437,7 @@ a {
 }
 
 .collapsible__content {
+  display: none;
   max-height: 0vh;
   overflow: hidden;
   opacity: 0;
@@ -444,8 +445,15 @@ a {
 }
 
 .collapsible--expanded .collapsible__content {
+  display: block;
   max-height: 100vh;
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible--expanded .collapsible__content {
+    display: none;
+  }
 }
 
 /* Navigations Bars */
@@ -463,6 +471,7 @@ a {
 }
 
 .nav__button {
+  font-size: 1.5rem;
   height: 60px;
   width: 150px;
 }
@@ -487,10 +496,6 @@ a {
   margin: 0;
   padding-left: 1rem;
   width: 120px;
-}
-
-.nav .btn {
-  font-size: 1.5rem;
 }
 
 .nav__list {
