@@ -415,6 +415,10 @@ a {
   text-align: center;
 }
 
+.welcome__block {
+  padding-top: 0.1rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
