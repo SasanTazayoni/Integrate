@@ -368,9 +368,16 @@ a {
   margin-top: 0;
 }
 
-.block--secondary {
-  background: linear-gradient(#fff, #7f7aff 30%);
-  color: #fff;
+.block--secondary-gradient {
+  color: #7f7aff;
+}
+
+.block--accent {
+  background: #3decde;
+}
+
+.block--white {
+  background: #fff;
 }
 
 .block--secondary h1,
@@ -379,12 +386,22 @@ a {
   color: #fff;
 }
 
-.block--accent {
+.block--accent-hero {
+  background: #3decde;
+  background: linear-gradient(#fff 65%, #3decde);
+}
+
+.block--secondary-gradient {
+  background: linear-gradient(#fff, #7f7aff 30%);
+  color: #fff;
+}
+
+.block--accent-gradient {
   background: #3decde;
   background: linear-gradient(#fff, #3decde 10%);
 }
 
-.block--white {
+.block--white-gradient {
   background: #fff;
   background: linear-gradient(#3decde, #fff 10%);
 }
@@ -408,11 +425,11 @@ a {
     grid-template-columns: 1fr auto;
   }
 
-  .block--accent {
+  .block--accent-gradient {
     background: linear-gradient(#fff, #3decde 30%);
   }
 
-  .block--white {
+  .block--white-gradient {
     background: linear-gradient(#3decde, #fff 30%);
   }
 
@@ -442,7 +459,6 @@ a {
 }
 
 .collapsible__content {
-  display: none;
   max-height: 0vh;
   overflow: hidden;
   opacity: 0;
