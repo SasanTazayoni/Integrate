@@ -245,8 +245,29 @@
           <svg class="icon icon--black testimonials__icon-left">
             <use xlink:href="images/integratesprite.svg#left-quote"></use>
           </svg>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
+          <p class="testimonial__text active" data-testimonial="1">
+            1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
+            Sapiente voluptatibus placeat quisquam deserunt quia architecto
+            voluptatem ad corporis aspernatur non. Modi error cumque maxime
+            voluptatem, doloribus maiores quis unde quibusdam aperiam mollitia
+            alias, ipsum quaerat expedita, autem asperiores.
+          </p>
+          <p class="testimonial__text" data-testimonial="2">
+            2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
+            Sapiente voluptatibus placeat quisquam deserunt quia architecto
+            voluptatem ad corporis aspernatur non. Modi error cumque maxime
+            voluptatem, doloribus maiores quis unde quibusdam aperiam mollitia
+            alias, ipsum quaerat expedita, autem asperiores.
+          </p>
+          <p class="testimonial__text" data-testimonial="3">
+            3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
+            Sapiente voluptatibus placeat quisquam deserunt quia architecto
+            voluptatem ad corporis aspernatur non. Modi error cumque maxime
+            voluptatem, doloribus maiores quis unde quibusdam aperiam mollitia
+            alias, ipsum quaerat expedita, autem asperiores.
+          </p>
+          <p class="testimonial__text" data-testimonial="4">
+            4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum?
             Sapiente voluptatibus placeat quisquam deserunt quia architecto
             voluptatem ad corporis aspernatur non. Modi error cumque maxime
             voluptatem, doloribus maiores quis unde quibusdam aperiam mollitia
@@ -265,10 +286,11 @@
             type="radio"
             name="testimonial"
             checked="checked"
+            data-testimonial-radio="1"
           />
-          <input class="testimonials__button" type="radio" name="testimonial" />
-          <input class="testimonials__button" type="radio" name="testimonial" />
-          <input class="testimonials__button" type="radio" name="testimonial" />
+          <input class="testimonials__button" type="radio" name="testimonial" data-testimonial-radio="2" />
+          <input class="testimonials__button" type="radio" name="testimonial" data-testimonial-radio="3" />
+          <input class="testimonials__button" type="radio" name="testimonial" data-testimonial-radio="4" />
           <svg class="icon icon--secondary icon--right testimonials__button">
             <use xlink:href="images/integratesprite.svg#chevron"></use>
           </svg>

@@ -571,6 +571,14 @@ a {
   box-shadow: 0 0 40px 25px #fff;
 }
 
+.nav__list {
+  margin: 0;
+}
+
+.collapsible--expanded .nav__list {
+  margin: 20px 0;
+}
+
 @media screen and (max-width: 370px) {
   .nav__logo {
     height: 60px;
@@ -823,6 +831,14 @@ a {
 .testimonials__card > p {
   margin-bottom: 0;
   padding: 1rem;
+}
+
+.testimonial__text {
+  display: none;
+}
+
+.testimonial__text.active {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
