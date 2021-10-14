@@ -488,7 +488,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 1.8rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -520,6 +519,7 @@ a {
 .nav__logo__title {
   align-self: center;
   color: #fff;
+  font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1px;
   margin: 0;
@@ -571,12 +571,14 @@ a {
 }
 
 @media screen and (max-width: 370px) {
-  .nav__toggler {
-    width: 40px;
+  .nav__logo {
+    height: 60px;
+    width: 60px;
   }
 
-  .nav__logo__title {
-    font-size: 2.4rem;
+  .nav__toggler {
+    height: 50px;
+    width: 50px;
   }
 }
 
