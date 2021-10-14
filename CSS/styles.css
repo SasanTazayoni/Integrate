@@ -488,6 +488,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 1.8rem;
   position: fixed;
   width: 100%;
   z-index: 1;
