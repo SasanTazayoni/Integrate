@@ -704,20 +704,19 @@ a {
 
   .hero__container {
     padding-top: 14rem;
-    width: 100%;
   }
 
   .hero__image {
     display: initial;
-    height: 110vh;
+    height: 80vh;
   }
 
   .hero__nameplate {
     position: absolute;
-    top: 370px;
+    top: 300px;
     max-width: none;
     transform: translateX(-50%);
-    width: 700px;
+    width: 500px;
   }
 
   .hero__nameplate:hover {
@@ -726,6 +725,20 @@ a {
 
   .hero__tagline {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__image {
+    height: 100vh;
+  }
+
+  .hero__nameplate {
+    position: absolute;
+    top: 360px;
+    max-width: none;
+    transform: translateX(-50%);
+    width: 700px;
   }
 }
 
