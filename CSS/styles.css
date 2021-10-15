@@ -92,16 +92,18 @@ p {
     font-size: 1.8rem;
   }
 
-  h1 {
-    font-size: 6rem;
-  }
-
   h2 {
     font-size: 4rem;
   }
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  h1 {
+    font-size: 6rem;
   }
 }
 
@@ -663,8 +665,6 @@ a {
   border: solid 2px var(--color-primary);
   border-radius: 30px;
   box-shadow: 0 0 20px black;
-  margin: 1rem;
-  padding: 1rem;
 }
 
 .hero__heading {
@@ -677,31 +677,18 @@ a {
 }
 
 .hero__tagline {
-  font-size: 2rem;
   font-style: italic;
   letter-spacing: 1px;
   margin: 0;
 }
 
 .hero__button {
-  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 0;
 }
 
 .hero__image {
   display: none;
-}
-
-@media screen and (max-width: 440px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  .hero__tagline {
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -711,14 +698,23 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero__button {
+    font-size: 1.2rem;
+  }
+
+  .hero__container {
+    padding-top: 14rem;
+    width: 100%;
+  }
+
   .hero__image {
     display: initial;
-    height: 90vh;
+    height: 110vh;
   }
 
   .hero__nameplate {
     position: absolute;
-    top: 320px;
+    top: 370px;
     max-width: none;
     transform: translateX(-50%);
     width: 700px;
@@ -727,19 +723,32 @@ a {
   .hero__nameplate:hover {
     transform: translateX(-50%);
   }
+
+  .hero__tagline {
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (min-width: 1296px) {
+  .hero__button {
+    font-size: 1.5rem;
+  }
+
   .hero__container {
     padding-top: 6rem;
   }
 
   .hero__image {
-    height: 100vh;
+    height: 120vh;
   }
 
   .hero__nameplate {
+    top: 320px;
     width: 840px;
+  }
+
+  .hero__tagline {
+    font-size: 1.8rem;
   }
 }
 
