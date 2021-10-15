@@ -368,8 +368,9 @@ a {
   margin-top: 0;
 }
 
-.block--secondary-gradient {
-  color: #7f7aff;
+.block--secondary {
+  background: #7f7aff;
+  color: white;
 }
 
 .block--accent {
