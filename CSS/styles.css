@@ -823,6 +823,7 @@ a {
 }
 
 .testimonials__card {
+  background-color: var(--color-primary);
   border-radius: 20px;
   box-shadow: 0 0 20px 10px #34ccbf;
   margin: 3rem auto;
@@ -837,6 +838,7 @@ a {
 }
 
 .testimonials__button {
+  cursor: pointer;
   margin: 1rem;
 }
 
