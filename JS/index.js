@@ -10,8 +10,8 @@ collapsibles.forEach((item) =>
 const Testimonials = {
   config: {
     // Time in seconds
-    timerInterval: 2,
-    timerClickDelay: 5,
+    timerInterval: 14,
+    timerClickDelay: 7,
     
     // CSS Selectors
     selectors: {
