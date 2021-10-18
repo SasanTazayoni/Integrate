@@ -11,7 +11,7 @@ const Testimonials = {
   config: {
     // Time in seconds
     timerInterval: 14,
-    timerClickDelay: 7,
+    timerClickDelay: 9,
     
     // CSS Selectors
     selectors: {
