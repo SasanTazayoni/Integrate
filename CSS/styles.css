@@ -459,7 +459,7 @@ a {
 
   .block .icon-btn {
     justify-self: start;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 }
 
@@ -693,7 +693,7 @@ a {
 
 .hero__btn {
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin: 1rem 0;
   width: 180px;
 }
@@ -706,6 +706,12 @@ a {
 @media screen and (max-width: 360px) {
   .hero__container {
     height: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__btn {
+    margin: 1rem;
   }
 }
 
