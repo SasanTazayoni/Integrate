@@ -863,6 +863,7 @@ a {
 }
 
 .testimonials__content > p {
+  font-style: italic;
   margin-bottom: 0;
   padding: 1rem;
 }
