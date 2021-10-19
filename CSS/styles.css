@@ -395,6 +395,7 @@ a {
 }
 
 .block--secondary-gradient {
+  background: #7f7aff;
   background: linear-gradient(#fff, #7f7aff 10%);
   color: #fff;
 }
@@ -433,11 +434,13 @@ a {
   }
 
   .block--secondary-gradient {
+    background: #7f7aff;
     background: linear-gradient(#fff, #7f7aff 30%);
     color: #fff;
   }
 
   .block--accent-gradient {
+    background: #3decde;
     background: linear-gradient(#fff, #3decde 30%);
   }
 
@@ -447,6 +450,7 @@ a {
   }
 
   .block--white-gradient {
+    background: #fff;
     background: linear-gradient(#3decde, #fff 30%);
   }
 
@@ -833,6 +837,14 @@ a {
 }
 
 .testimonials__content {
+  background: #fff;
+  background: linear-gradient(
+    135deg,
+    #73aeff,
+    #fff 10%,
+    #fff 90%,
+    #73aeff 100%
+  );
   border-radius: 20px;
   box-shadow: 0 0 20px 10px #34ccbf;
   margin: 3rem auto;
