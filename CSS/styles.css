@@ -276,13 +276,12 @@ a {
   padding-left: 1rem;
 }
 
-.btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .btn--long:hover {
   transform: scale(1.015);
+}
+
+.icon-btn {
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -366,7 +365,7 @@ a {
   padding: 6rem 2rem;
 }
 
-.block__heading {
+.block__header {
   margin-top: 0;
 }
 
@@ -695,7 +694,8 @@ a {
 .hero__btn {
   font-weight: bold;
   letter-spacing: 1px;
-  width: 145px;
+  margin: 1rem 0;
+  width: 180px;
 }
 
 .hero__image {
@@ -710,8 +710,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .hero__button {
-    font-size: 1.2rem;
+  .hero__btn {
+    font-size: 1.5rem;
   }
 
   .hero__container {
