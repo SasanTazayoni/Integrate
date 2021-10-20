@@ -871,6 +871,13 @@ a {
 
 .testimonials__button {
   margin: 1rem;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.testimonials__button:hover {
+  opacity: 1;
 }
 
 .testimonials__content > .testimonials__icon-left {
@@ -897,6 +904,43 @@ a {
 
 .testimonial__text.active {
   display: block;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.testimonial-bullet.active {
+  background: cornflowerblue;
+  box-shadow: 0 0 1px 1px inset white;
+  animation: pop 0.2s linear;
+}
+
+@keyframes pop {
+  from {
+    box-shadow: 0 0 1px 10px inset white;
+  }
+  to {
+    box-shadow: 0 0 1px 1px inset white;
+  }
 }
 
 @media screen and (max-width: 360px) {
