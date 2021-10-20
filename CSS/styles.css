@@ -599,7 +599,7 @@ a {
   margin: 20px 0;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 360px) {
   .nav__logo {
     height: 60px;
     width: 60px;
@@ -857,6 +857,7 @@ a {
   );
   border-radius: 20px;
   box-shadow: 0 0 20px 10px #34ccbf;
+  height: 300px;
   margin: 3rem auto;
   padding: 2rem;
   position: relative;
@@ -898,6 +899,24 @@ a {
   display: block;
 }
 
+@media screen and (max-width: 360px) {
+  .testimonials__content {
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .testimonials__content {
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 552px) {
+  .testimonials__content {
+    height: 220px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .testimonials__content > p {
     font-size: 1.5rem;
@@ -910,6 +929,19 @@ a {
   }
 
   .testimonials__content {
+    height: 480px;
     padding: 3rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials__content {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  .testimonials__content {
+    height: 200px;
   }
 }
