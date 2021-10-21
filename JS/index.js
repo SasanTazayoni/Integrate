@@ -10,13 +10,13 @@ collapsibles.forEach((item) =>
 const Testimonials = {
   config: {
     // Time in seconds
-    timerInterval: 14,
-    timerClickDelay: 9,
+    timerInterval: 15,
+    timerClickDelay: 20,
     
     // CSS Selectors
     selectors: {
       testimonials: '.testimonial__text',
-      radioButtons: 'input.testimonials__button',
+      radioButtons: '.testimonial-bullet',
       arrowRight: '.testimonials__button.icon--right',
       arrowLeft: '.testimonials__button.icon--left',
       activeClass: 'active'
@@ -25,14 +25,24 @@ const Testimonials = {
 
   init () {
     this.initVariables();
+    this.createBullets();
     this.timer();
     this.events();
+  },
+
+  createBullets() {
+    const container = document.querySelector('.testimonials-bullets');
+    
+    const firstBullet = '<div class="testimonial-bullet active"></div>';
+    const bullets = firstBullet + '<div class="testimonial-bullet"></div>'.repeat(this.testimonials.length - 1);
+    
+    container.innerHTML = bullets;
+    this.buttons = document.querySelectorAll(this.config.selectors.radioButtons);
   },
 
   initVariables () {
     this.current = 1;
     this.testimonials = document.querySelectorAll(this.config.selectors.testimonials);
-    this.buttons = document.querySelectorAll(this.config.selectors.radioButtons);
     this.active = this.testimonials[0];
     this.arrows = {
       right: document.querySelector(this.config.selectors.arrowRight),
@@ -103,7 +113,9 @@ const Testimonials = {
     this.active.classList.add(this.config.selectors.activeClass);
 
     // Check button
-    this.buttons[this.current - 1].checked = true;
+    // this.buttons[this.current - 1].checked = true;
+    this.buttons.forEach(button => button.classList.remove('active'));
+    this.buttons[this.current - 1].classList.add('active');
   }
 };
 
