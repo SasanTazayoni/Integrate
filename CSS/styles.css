@@ -146,7 +146,7 @@ a {
 .icon--left {
   cursor: pointer;
   height: 40px;
-  opacity: 0.3;
+  opacity: 0.5;
   transform: rotate(90deg);
   transition: all 0.3s;
   width: 40px;
@@ -155,7 +155,7 @@ a {
 .icon--right {
   cursor: pointer;
   height: 40px;
-  opacity: 0.3;
+  opacity: 0.5;
   transform: rotate(-90deg);
   transition: all 0.3s;
   width: 40px;
@@ -418,6 +418,10 @@ a {
 
 .block__header {
   margin-top: 0;
+}
+
+.block__header-center {
+  text-align: center;
 }
 
 .block--secondary {
@@ -889,21 +893,19 @@ a {
   text-align: center;
 }
 
-.testimonials__header {
-  text-align: center;
-}
-
 .testimonials__content {
+  align-items: center;
   background: #fff;
   background: linear-gradient(
     135deg,
-    #73aeff,
-    #fff 10%,
-    #fff 90%,
-    #73aeff 100%
+    #73e3ff,
+    #fff 15%,
+    #fff 85%,
+    #73e3ff 100%
   );
   border-radius: 20px;
   box-shadow: 0 0 20px 10px #34ccbf;
+  display: flex;
   height: 300px;
   margin: 3rem auto;
   padding: 2rem;
@@ -1048,5 +1050,18 @@ a {
 @media screen and (min-width: 1296px) {
   .testimonials__content {
     height: 200px;
+  }
+}
+
+/* Any Questions */
+.questions__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 420px) {
+  .questions__container {
+    flex-direction: row;
   }
 }
