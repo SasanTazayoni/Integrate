@@ -388,10 +388,6 @@ a {
   display: grid;
 }
 
-.grid > a {
-  display: grid;
-}
-
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -464,13 +460,14 @@ a {
   background: linear-gradient(#3decde, #fff 10%);
 }
 
-.block .icon-btn {
-  justify-self: center;
-  align-self: center;
+.block__content__btn {
+  padding-left: 2rem;
 }
 
-.block__content {
-  text-align: center;
+.block__anchor {
+  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .welcome__block {
@@ -506,15 +503,6 @@ a {
   .block--white-gradient {
     background: #fff;
     background: linear-gradient(#3decde, #fff 30%);
-  }
-
-  .block__content {
-    text-align: left;
-  }
-
-  .block .icon-btn {
-    justify-self: start;
-    margin: 0 1rem;
   }
 }
 
@@ -749,7 +737,7 @@ a {
 .hero__btn {
   font-weight: bold;
   letter-spacing: 0;
-  margin: 1rem 0;
+  margin: 1rem;
   width: 180px;
 }
 
@@ -761,12 +749,6 @@ a {
 @media screen and (max-width: 360px) {
   .hero__container {
     height: 600px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero__btn {
-    margin: 1rem;
   }
 }
 
@@ -794,7 +776,7 @@ a {
     max-width: none;
     opacity: 0.9;
     position: absolute;
-    top: 300px;
+    top: 24rem;
     transform: translateX(-50%);
     width: 600px;
   }
@@ -815,7 +797,7 @@ a {
 
   .hero__nameplate {
     position: absolute;
-    top: 360px;
+    top: 28rem;
     max-width: none;
     transform: translateX(-50%);
     width: 720px;
@@ -1053,15 +1035,21 @@ a {
   }
 }
 
-/* Any Questions */
-.questions__container {
+/* Questions block */
+
+.questions__buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
-@media screen and (min-width: 420px) {
-  .questions__container {
-    flex-direction: row;
+.questions__button {
+  width: 150px;
+}
+
+@media screen and (max-width: 360px) {
+  .questions__buttons {
+    align-items: center;
+    flex-direction: column;
   }
 }
