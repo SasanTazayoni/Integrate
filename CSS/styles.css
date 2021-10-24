@@ -624,14 +624,14 @@ a {
   cursor: pointer;
   fill: #39b6ff;
   height: 60px;
-  opacity: 0.5;
+  opacity: 0.6;
   transition: box-shadow 0.25s, opacity 0.25s;
   width: 60px;
 }
 
 .collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 40px 10px #39b6ff;
+  box-shadow: 0 0 30px 5px #39b6ff;
 }
 
 .nav__list {
