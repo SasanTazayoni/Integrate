@@ -32,7 +32,7 @@
 
 :root {
   --color-primary: #00f7f7;
-  --color-secondary: #7f7aff;
+  --color-secondary: #39b6ff;
   --color-accent: #32d2c6;
   --color-headings: #000000;
   --color-body: #3c0042;
@@ -127,6 +127,7 @@ a {
 
 .icon--secondary {
   fill: var(--color-secondary);
+  transition: fill 0.25s;
 }
 
 .icon--accent {
@@ -258,7 +259,7 @@ a {
   align-items: center;
   border-radius: 40px;
   border: 0;
-  box-shadow: 0rem 0rem 20px grey;
+  box-shadow: 0rem 0rem 20px #acacac;
   cursor: pointer;
   display: inline-flex;
   font-size: 1.8rem;
@@ -281,15 +282,15 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: #000;
 }
 
 .btn--secondary:hover {
-  background: #39b6ff;
+  background: #7ccfff;
 }
 
 .btn--secondary > .icon {
-  fill: #fff;
+  fill: #000;
 }
 
 .btn--accent {
@@ -315,7 +316,7 @@ a {
 .btn--primary:hover,
 .btn--secondary:hover,
 .btn--accent:hover {
-  box-shadow: 0rem 0rem 20px black;
+  box-shadow: 0rem 0rem 20px grey;
   transform: scale(1.15);
 }
 
@@ -421,8 +422,8 @@ a {
 }
 
 .block--secondary {
-  background: #7f7aff;
-  color: white;
+  background: #39b6ff;
+  color: black;
 }
 
 .block--accent {
@@ -436,7 +437,7 @@ a {
 .block--secondary h1,
 .block--secondary h2,
 .block--secondary h3 {
-  color: #fff;
+  color: var(--color-headings);
 }
 
 .block--accent-hero {
@@ -445,9 +446,9 @@ a {
 }
 
 .block--secondary-gradient {
-  background: #7f7aff;
-  background: linear-gradient(#fff, #7f7aff 10%);
-  color: #fff;
+  background: #39b6ff;
+  background: linear-gradient(#fff, #39b6ff 10%);
+  color: #000;
 }
 
 .block--accent-gradient {
@@ -485,9 +486,9 @@ a {
   }
 
   .block--secondary-gradient {
-    background: #7f7aff;
-    background: linear-gradient(#fff, #7f7aff 30%);
-    color: #fff;
+    background: #39b6ff;
+    background: linear-gradient(#fff, #39b6ff 30%);
+    color: #000;
   }
 
   .block--accent-gradient {
@@ -543,7 +544,7 @@ a {
 /* Navigations Bars */
 
 .nav {
-  background: var(--color-secondary);
+  background: #fff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -551,7 +552,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 1;
-  box-shadow: 1rem 0 1rem black, -1rem 0 1rem black;
+  box-shadow: 1rem 0 3rem #dcdcdc, -1rem 0 3rem #dcdcdc;
 }
 
 .nav__button {
@@ -578,7 +579,7 @@ a {
 
 .nav__logo__title {
   align-self: center;
-  color: #fff;
+  color: #000;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -593,32 +594,35 @@ a {
 }
 
 .nav__item {
-  border-bottom: 1px solid #a887e0;
+  border-bottom: 1px solid #daeffc;
   padding: 1rem 2rem;
   vertical-align: middle;
 }
 
 .nav__item > a {
-  color: #fff;
-  transition: color 0.25s;
+  color: #0054a6;
+  opacity: 1;
+  transition: all 0.25s;
 }
 
 .nav__item > a:hover,
 .nav__item > a:hover .icon {
-  color: #40e0d0;
-  fill: #40e0d0;
+  opacity: 0.5;
 }
 
 .nav__item .icon {
+  fill: #0054a6;
   height: 2.3rem;
   width: 2.3rem;
   margin-right: 1rem;
+  opacity: 1;
   vertical-align: middle;
 }
 
 .nav__toggler {
   border-radius: 7.5px;
   cursor: pointer;
+  fill: #39b6ff;
   height: 60px;
   opacity: 0.5;
   transition: box-shadow 0.25s, opacity 0.25s;
@@ -627,7 +631,7 @@ a {
 
 .collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 40px 25px #fff;
+  box-shadow: 0 0 40px 10px #39b6ff;
 }
 
 .nav__list {
@@ -768,11 +772,11 @@ a {
   }
 
   .hero__nameplate {
-    background: #7f7aff;
+    background: #39b6ff;
     border-radius: 30px;
     border: solid 2px var(--color-primary);
     box-shadow: 0 0 20px black;
-    color: white;
+    color: #000;
     max-width: none;
     opacity: 0.9;
     position: absolute;
