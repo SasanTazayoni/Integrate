@@ -573,6 +573,7 @@ a {
 }
 
 .nav__logo {
+  border-radius: 100%;
   height: 70px;
   width: 70px;
 }
