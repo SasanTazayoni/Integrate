@@ -772,7 +772,7 @@ a {
   }
 
   .hero__nameplate {
-    background: #39b6ff;
+    background: #fff;
     border-radius: 30px;
     border: solid 2px var(--color-primary);
     box-shadow: 0 0 20px black;
