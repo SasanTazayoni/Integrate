@@ -771,7 +771,19 @@ a {
 
 @media screen and (max-width: 360px) {
   .hero__container {
-    height: 600px;
+    height: 550px;
+  }
+
+  .hero__heading {
+    font-size: 4.5rem;
+  }
+
+  .hero__qualifications {
+    font-size: 45%;
+  }
+
+  .hero__tagline {
+    font-size: 55%;
   }
 }
 
