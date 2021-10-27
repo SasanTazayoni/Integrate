@@ -481,22 +481,6 @@ a {
   .block .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
-
-  .block--secondary-gradient {
-    background: #39b6ff;
-    background: linear-gradient(#fff, #39b6ff 30%);
-    color: #000;
-  }
-
-  .block--accent-gradient {
-    background: #3decde;
-    background: linear-gradient(#fff, #3decde 30%);
-  }
-
-  .block--white-gradient {
-    background: #fff;
-    background: linear-gradient(#3decde, #fff 30%);
-  }
 }
 
 /* Collapsibles */
@@ -726,16 +710,6 @@ a {
 }
 
 /* Hero */
-
-/* .background__image {
-  background: url(../images/child.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: initial;
-  background-position: center;
-  height: 70vh;
-  width: 100%;
-} */
 
 .hero__container {
   align-items: center;
