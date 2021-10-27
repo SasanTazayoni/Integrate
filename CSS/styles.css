@@ -441,11 +441,6 @@ a {
   color: var(--color-headings);
 }
 
-.block--accent-hero {
-  background: #fff;
-  background: linear-gradient(#fff 95%, #3decde 100%);
-}
-
 .block--secondary-gradient {
   background: #39b6ff;
   background: linear-gradient(#fff, #39b6ff 10%);
@@ -495,11 +490,6 @@ a {
   .block--accent-gradient {
     background: #3decde;
     background: linear-gradient(#fff, #3decde 30%);
-  }
-
-  .block--accent-hero {
-    background: #fff;
-    background: linear-gradient(#fff 65%, #3decde 75%);
   }
 
   .block--white-gradient {
@@ -747,11 +737,6 @@ a {
   font-style: italic;
 }
 
-.hero__qualifications {
-  display: inline-block;
-  font-size: 45%;
-}
-
 .hero__tagline {
   font-style: italic;
   letter-spacing: 1px;
@@ -777,10 +762,6 @@ a {
 
   .hero__heading {
     font-size: 4.5rem;
-  }
-
-  .hero__qualifications {
-    font-size: 45%;
   }
 
   .hero__tagline {
