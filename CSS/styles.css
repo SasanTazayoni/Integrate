@@ -754,12 +754,6 @@ a {
   width: 180px;
 }
 
-@media screen and (max-width: 360px) {
-  .hero__container {
-    height: 570px;
-  }
-}
-
 @media screen and (max-width: 375px) {
   .hero__heading {
     font-size: 4.5rem;
@@ -771,10 +765,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .hero__container {
-    height: 1040px;
-  }
-
   .hero__btn {
     font-size: 1.5rem;
   }
