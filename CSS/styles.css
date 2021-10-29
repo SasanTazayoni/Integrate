@@ -968,6 +968,12 @@ a {
 
 /* Questions block */
 
+.questions__container {
+  padding-top: 5vh;
+  height: 30vh;
+  text-align: center;
+}
+
 .questions__buttons {
   display: flex;
   flex-direction: row;
