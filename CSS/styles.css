@@ -1092,17 +1092,22 @@ a {
 }
 
 .footer__item > a {
-  color: #fff;
+  color: #325aff;
+  opacity: 0.7;
   padding: 0 2rem;
   transition: all 0.3s;
 }
 
 .footer__item > a:hover {
-  color: #3decde;
+  opacity: 1;
 }
 
 .logo__block {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding-top: 6rem;
+}
+
+.footer__logo {
+  border-radius: 100%;
 }
