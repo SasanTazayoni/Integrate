@@ -1088,6 +1088,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 0;
+  padding-top: 2rem;
 }
 
 .footer__item > a {
