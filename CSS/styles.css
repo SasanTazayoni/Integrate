@@ -432,10 +432,12 @@ a {
 
 .block--accent {
   background: #3decde;
+  /* background: rgba(247, 247, 247); */
 }
 
 .block--white {
   background: #fff;
+  /* background: rgba(90, 245, 230); */
 }
 
 .block--secondary h1,
@@ -1111,3 +1113,14 @@ a {
   border-radius: 100%;
   height: 100px;
 }
+
+/* Divider */
+
+/* .divider {
+  background: lightgrey;
+  border: 1px solid lightgrey;
+  height: 1px;
+  position: absolute;
+  left: 10%;
+  width: 80vw;
+} */
