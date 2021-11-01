@@ -1081,3 +1081,27 @@ a {
     flex-direction: column;
   }
 }
+
+/* Footer */
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer__item > a {
+  color: #fff;
+  padding: 0 2rem;
+  transition: all 0.3s;
+}
+
+.footer__item > a:hover {
+  color: #3decde;
+}
+
+.logo__block {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
