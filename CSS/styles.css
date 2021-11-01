@@ -149,7 +149,7 @@ a {
   cursor: pointer;
   fill: #325aff;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.9;
   transform: rotate(90deg);
   transition: all 0.3s;
   width: 40px;
@@ -159,7 +159,7 @@ a {
   cursor: pointer;
   fill: #325aff;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.9;
   transform: rotate(-90deg);
   transition: all 0.3s;
   width: 40px;
@@ -167,7 +167,7 @@ a {
 
 .icon--left:hover,
 .icon--right:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .icon--left:hover {
