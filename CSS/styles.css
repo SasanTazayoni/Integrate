@@ -750,11 +750,16 @@ a {
 
 @media screen and (max-width: 375px) {
   .hero__heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .hero__tagline {
-    font-size: 55%;
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero__btn {
+    margin: 0.5rem;
   }
 }
 
