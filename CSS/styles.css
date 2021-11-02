@@ -147,9 +147,9 @@ a {
 
 .icon--left {
   cursor: pointer;
-  fill: var(--color-tertiary);
+  fill: var(--color-secondary);
   height: 40px;
-  opacity: 0.9;
+  opacity: 0.6;
   transform: rotate(90deg);
   transition: all 0.3s;
   width: 40px;
@@ -157,9 +157,9 @@ a {
 
 .icon--right {
   cursor: pointer;
-  fill: var(--color-tertiary);
+  fill: var(--color-secondary);
   height: 40px;
-  opacity: 0.9;
+  opacity: 0.6;
   transform: rotate(-90deg);
   transition: all 0.3s;
   width: 40px;
@@ -167,7 +167,7 @@ a {
 
 .icon--left:hover,
 .icon--right:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .icon--left:hover {
@@ -308,6 +308,10 @@ a {
   color: #fff;
 }
 
+.btn--tertiary .icon {
+  fill: #fff;
+}
+
 .btn--primary,
 .btn--secondary,
 .btn--tertiary {
@@ -425,8 +429,8 @@ a {
 }
 
 .block--secondary {
-  background: #39b6ff;
-  color: black;
+  background: var(--color-secondary);
+  color: var(--color-headings);
 }
 
 .block--grey {
@@ -541,7 +545,7 @@ a {
 
 .nav__logo__title {
   align-self: center;
-  color: #000;
+  color: var(--color-headings);
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -563,7 +567,7 @@ a {
 }
 
 .nav__item > a {
-  color: #325aff;
+  color: var(--color-tertiary);
   opacity: 0.7;
   transition: all 0.3s;
 }
@@ -574,7 +578,7 @@ a {
 }
 
 .nav__item .icon {
-  fill: #325aff;
+  fill: var(--color-tertiary);
   height: 2.3rem;
   width: 2.3rem;
   margin-right: 1rem;
@@ -585,7 +589,7 @@ a {
 .nav__toggler {
   border-radius: 7.5px;
   cursor: pointer;
-  fill: #39b6ff;
+  fill: var(--color-secondary);
   height: 60px;
   opacity: 0.6;
   transition: box-shadow 0.25s, opacity 0.25s;
@@ -594,7 +598,7 @@ a {
 
 .collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 30px 5px #39b6ff;
+  box-shadow: 0 0 30px 5px var(--color-secondary);
 }
 
 .nav__list {
