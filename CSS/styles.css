@@ -31,9 +31,9 @@
 }
 
 :root {
-  --color-primary: #00f7f7;
+  --color-primary: #00f0f7;
   --color-secondary: #39b6ff;
-  --color-accent: #32d2c6;
+  --color-tertiary: #325aff;
   --color-headings: #000000;
   --color-body: #3c0042;
 }
@@ -131,8 +131,8 @@ a {
   transition: fill 0.25s;
 }
 
-.icon--accent {
-  fill: var(--color-accent);
+.icon--tertiary {
+  fill: var(--color-tertiary);
 }
 
 .icon--white {
@@ -147,7 +147,7 @@ a {
 
 .icon--left {
   cursor: pointer;
-  fill: #325aff;
+  fill: var(--color-tertiary);
   height: 40px;
   opacity: 0.9;
   transform: rotate(90deg);
@@ -157,7 +157,7 @@ a {
 
 .icon--right {
   cursor: pointer;
-  fill: #325aff;
+  fill: var(--color-tertiary);
   height: 40px;
   opacity: 0.9;
   transform: rotate(-90deg);
@@ -280,7 +280,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #58ffff;
+  background: #00f7f7;
 }
 
 .btn--secondary {
@@ -292,33 +292,32 @@ a {
   background: #7ccfff;
 }
 
-.btn--secondary > .icon {
-  fill: #000;
+.btn--tertiary {
+  background: var(--color-tertiary);
 }
 
-.btn--accent {
-  background: var(--color-accent);
+.btn--tertiary:hover {
+  background: #328cff;
 }
 
-.btn--accent:hover {
-  background: #3decde;
-}
-
-.btn--primary,
-.btn--accent {
+.btn--primary {
   color: var(--color-headings);
+}
+
+.btn--tertiary {
+  color: #fff;
 }
 
 .btn--primary,
 .btn--secondary,
-.btn--accent {
+.btn--tertiary {
   transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
     transform 0.5s ease-in-out;
 }
 
 .btn--primary:hover,
 .btn--secondary:hover,
-.btn--accent:hover {
+.btn--tertiary:hover {
   box-shadow: 0rem 0rem 20px grey;
   transform: scale(1.15);
 }
@@ -430,36 +429,18 @@ a {
   color: black;
 }
 
-.block--accent {
-  background: #3decde;
-  /* background: rgba(247, 247, 247); */
+.block--grey {
+  background: rgba(247, 247, 247);
 }
 
 .block--white {
   background: #fff;
-  /* background: rgba(90, 245, 230); */
 }
 
 .block--secondary h1,
 .block--secondary h2,
 .block--secondary h3 {
   color: var(--color-headings);
-}
-
-.block--secondary-gradient {
-  background: #39b6ff;
-  background: linear-gradient(#fff, #39b6ff 10%);
-  color: #000;
-}
-
-.block--accent-gradient {
-  background: #3decde;
-  background: linear-gradient(#fff, #3decde 10%);
-}
-
-.block--white-gradient {
-  background: #fff;
-  background: linear-gradient(#3decde, #fff 10%);
 }
 
 .block__content__btn {
@@ -897,13 +878,13 @@ a {
   background: #fff;
   background: linear-gradient(
     135deg,
-    #73e3ff,
+    #00f7f7,
     #fff 15%,
     #fff 85%,
-    #73e3ff 100%
+    #00f7f7 100%
   );
   border-radius: 20px;
-  box-shadow: 0 0 20px 10px #34ccbf;
+  box-shadow: 0 0 20px 1px #acacac;
   display: flex;
   height: 300px;
   margin: 3rem auto;
@@ -970,7 +951,7 @@ a {
 }
 
 .testimonial-bullet.active {
-  background: cornflowerblue;
+  background: var(--color-secondary);
   box-shadow: 0 0 1px 1px inset white;
   animation: pop 0.2s linear;
 }
@@ -1090,7 +1071,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .footer__item > a {
@@ -1111,7 +1092,7 @@ a {
 
 .footer__logo {
   border-radius: 100%;
-  height: 100px;
+  height: 200px;
 }
 
 /* Divider */
