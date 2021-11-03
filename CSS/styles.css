@@ -1114,7 +1114,7 @@ a {
 }
 
 .footer__item > a:hover {
-  color: var(--color-tertiary-hover);
+  color: var(--color-tertiary);
 }
 
 .footer__logo-block {
@@ -1128,9 +1128,19 @@ a {
   height: 150px;
 }
 
+.footer__credits-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__credits-block > p {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 360px) {
   .footer__item {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
   }
 }
 
