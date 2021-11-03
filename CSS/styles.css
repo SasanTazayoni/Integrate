@@ -1106,6 +1106,13 @@ a {
   font-size: 1.1rem;
 }
 
+.footer__logo-block {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 @media screen and (max-width: 360px) {
   .footer__item {
     font-size: 0.5rem;
