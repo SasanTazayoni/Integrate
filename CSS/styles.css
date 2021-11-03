@@ -589,6 +589,10 @@ a {
   vertical-align: middle;
 }
 
+.nav__contact__btn {
+  border: 2px solid black;
+}
+
 .nav__toggler {
   border-radius: 7.5px;
   cursor: pointer;
