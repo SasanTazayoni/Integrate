@@ -1088,6 +1088,7 @@ a {
 .footer__logo-block {
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
