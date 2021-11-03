@@ -36,7 +36,7 @@
   --color-secondary: #39b6ff;
   --color-secondary-hover: #7ccfff;
   --color-tertiary: #325aff;
-  --color-tertiary-hover: #328cff;
+  --color-tertiary-hover: #0f0094;
   --color-headings: #000000;
   --color-body: #3c0042;
 }
@@ -571,13 +571,13 @@ a {
 
 .nav__item > a {
   color: var(--color-tertiary);
-  opacity: 0.7;
   transition: all 0.3s;
 }
 
 .nav__item > a:hover,
 .nav__item > a:hover .icon {
-  opacity: 1;
+  color: var(--color-tertiary-hover);
+  fill: var(--color-tertiary-hover);
 }
 
 .nav__item .icon {
@@ -1043,38 +1043,6 @@ a {
   }
 }
 
-/* Questions block */
-
-.questions__container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 30vh;
-  justify-content: center;
-  text-align: center;
-}
-
-.questions__buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.questions__button {
-  width: 150px;
-}
-
-@media screen and (max-width: 360px) {
-  .questions__container {
-    height: 70vh;
-  }
-
-  .questions__buttons {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 /* Footer */
 
 .footer__divider {
@@ -1108,13 +1076,13 @@ a {
 }
 
 .footer__item > a {
-  color: var(--color-headings);
+  color: var(--color-tertiary);
   font-weight: 550;
   transition: all 0.3s;
 }
 
 .footer__item > a:hover {
-  color: var(--color-tertiary);
+  color: var(--color-tertiary-hover);
 }
 
 .footer__logo-block {
