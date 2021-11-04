@@ -1136,13 +1136,9 @@ a {
     padding-bottom: 2rem;
   }
 }
+
 /* Divider */
 
-/* .divider {
-  background: lightgrey;
-  border: 1px solid lightgrey;
-  height: 1px;
-  position: absolute;
-  left: 10%;
-  width: 80vw;
-} */
+.footer__block {
+  border-top: solid lightgrey 1px;
+}
