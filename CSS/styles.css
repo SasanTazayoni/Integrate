@@ -427,6 +427,10 @@ a {
   text-align: center;
 }
 
+.block--top {
+  padding-top: 12rem;
+}
+
 .block--regular {
   text-align: left;
 }
@@ -472,6 +476,12 @@ a {
 @media screen and (min-width: 768px) {
   .block .grid--1x2 {
     grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1296px) {
+  .block--top {
+    padding-top: 20rem;
   }
 }
 
