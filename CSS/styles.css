@@ -66,7 +66,7 @@ h2,
 h3 {
   font-family: "spectral", Arial, Helvetica, sans-serif;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2,
@@ -442,7 +442,7 @@ a {
 }
 
 .block--grey {
-  background: rgba(244, 244, 244);
+  background: rgb(244, 244, 244);
 }
 
 .block--white {
@@ -475,6 +475,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .block .grid--1x2-alt {
+    grid-template-columns: 1fr auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1296px) {
   .block--top {
     padding-top: 20rem;
@@ -482,15 +488,35 @@ a {
 }
 
 /* Containers */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.container--padded {
-  max-width: 80vw;
+.container--large {
+  max-width: 95vw;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 0;
+}
+
+.container--buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 470px) {
+  .container--buttons {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container--large {
+    max-width: 85vw;
+  }
 }
 
 /* Collapsibles */
@@ -1178,12 +1204,19 @@ a {
   width: 100%;
 }
 
+.about__header {
+  text-align: center;
+}
+
 .about__image {
-  padding-left: 5rem;
-  height: 40vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .about__btn {
+  margin: 0 1.5rem;
   width: 180px;
 }
 
@@ -1192,7 +1225,7 @@ a {
   color: var(--color-headings);
   display: flex;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding-top: 4rem;
 }
 
 @media screen and (min-width: 1296px) {
@@ -1206,18 +1239,38 @@ a {
 /* FAQ block */
 
 .faq {
-  font-size: 2.4rem;
+  margin: 0 10px;
 }
 
 .faq__container--white {
   background: #fff;
+  border-left: 5px solid lightgrey;
+  margin: 0 1rem;
 }
 
 .faq__container--grey {
-  background: rgba(248, 248, 248);
+  background: rgb(244, 244, 244);
+  border-left: 5px solid lightgrey;
+  margin: 0 1rem;
 }
 
-.faq--qa {
+.faq__qa {
   font-weight: 600;
   font-size: 120%;
+}
+
+.faq__buttons {
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    margin: 0 5rem;
+  }
+
+  .faq__container--white,
+  .faq__container--grey {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
 }
