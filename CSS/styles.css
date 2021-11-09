@@ -150,7 +150,7 @@ a {
 
 .icon--left {
   cursor: pointer;
-  fill: var(--color-secondary);
+  fill: var(--color-tertiary);
   height: 40px;
   opacity: 0.6;
   transform: rotate(90deg);
@@ -160,7 +160,7 @@ a {
 
 .icon--right {
   cursor: pointer;
-  fill: var(--color-secondary);
+  fill: var(--color-tertiary);
   height: 40px;
   opacity: 0.6;
   transform: rotate(-90deg);
@@ -170,7 +170,7 @@ a {
 
 .icon--left:hover,
 .icon--right:hover {
-  opacity: 1;
+  fill: var(--color-tertiary-hover);
 }
 
 .icon--left:hover {
