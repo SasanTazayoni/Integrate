@@ -429,6 +429,7 @@ a {
 
 .block--top {
   padding-top: 12rem;
+  text-align: center;
 }
 
 .block--regular {
@@ -471,6 +472,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1141,4 +1143,25 @@ a {
 
 .footer__block {
   border-top: solid lightgrey 1px;
+}
+
+/* About */
+.about__iframe-container {
+  display: flex;
+  margin: 0;
+  height: 45vh;
+  width: 100%;
+}
+
+.about__iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1296px) {
+  .about__iframe-container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+  }
 }
