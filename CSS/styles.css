@@ -469,15 +469,6 @@ a {
   padding-top: 6rem;
 }
 
-<<<<<<< HEAD
-=======
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
->>>>>>> fc3e37137415ee0db8e6845cb8e53a8018b88f4d
 @media screen and (min-width: 768px) {
   .block .grid--1x2 {
     grid-template-columns: 1fr auto;
@@ -1161,7 +1152,6 @@ a {
   border-top: solid lightgrey 1px;
 }
 
-<<<<<<< HEAD
 /* Dividers */
 
 .divider {
@@ -1179,12 +1169,6 @@ a {
   display: flex;
   margin: 0;
   padding-top: 3rem;
-=======
-/* About */
-.about__iframe-container {
-  display: flex;
-  margin: 0;
->>>>>>> fc3e37137415ee0db8e6845cb8e53a8018b88f4d
   height: 45vh;
   width: 100%;
 }
@@ -1194,7 +1178,6 @@ a {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .about__image {
   padding-left: 5rem;
   height: 40vh;
@@ -1212,8 +1195,6 @@ a {
   padding: 1rem 2rem;
 }
 
-=======
->>>>>>> fc3e37137415ee0db8e6845cb8e53a8018b88f4d
 @media screen and (min-width: 1296px) {
   .about__iframe-container {
     display: flex;
@@ -1221,7 +1202,6 @@ a {
     height: 70vh;
   }
 }
-<<<<<<< HEAD
 
 /* FAQ block */
 
@@ -1241,5 +1221,3 @@ a {
   font-weight: 600;
   font-size: 120%;
 }
-=======
->>>>>>> fc3e37137415ee0db8e6845cb8e53a8018b88f4d
