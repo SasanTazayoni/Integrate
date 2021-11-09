@@ -1044,14 +1044,6 @@ a {
 }
 
 /* Footer */
-
-.footer__divider {
-  background: lightgrey;
-  height: 1px;
-  position: absolute;
-  width: 100vw;
-}
-
 .footer__nav-block {
   display: flex;
   justify-content: center;
@@ -1136,8 +1128,6 @@ a {
     padding-bottom: 2rem;
   }
 }
-
-/* Divider */
 
 .footer__block {
   border-top: solid lightgrey 1px;
