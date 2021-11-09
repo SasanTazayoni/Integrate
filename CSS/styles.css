@@ -1228,6 +1228,13 @@ a {
   padding-top: 4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .about__image {
+    height: 40vh;
+    padding-left: 4rem;
+  }
+}
+
 @media screen and (min-width: 1296px) {
   .about__iframe-container {
     display: flex;
