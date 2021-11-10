@@ -395,7 +395,6 @@ a {
 }
 
 .block--top {
-  padding-bottom: 0;
   padding-top: 12rem;
   text-align: center;
 }
@@ -1225,6 +1224,10 @@ a {
 }
 
 /* FAQ page */
+
+.faq__block {
+  border-bottom: 1px solid lightgrey;
+}
 
 .faq {
   margin: 0 10px;
