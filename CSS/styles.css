@@ -238,6 +238,7 @@ a {
 }
 
 .list--tick {
+  color: var(--color-headings);
   list-style-image: url(../images/tick.svg);
 }
 
@@ -374,12 +375,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .grid--1x2 {
+  .grid--1x2-castrated {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1227,6 +1224,10 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
+}
+
+.services__list .list__item {
+  align-self: center;
 }
 
 /* FAQ page */
