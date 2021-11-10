@@ -490,9 +490,12 @@ a {
 
 .container--buttons {
   align-items: center;
+  color: var(--color-headings);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1.5rem;
+  padding-top: 3rem;
 }
 
 @media screen and (min-width: 470px) {
@@ -1196,16 +1199,8 @@ a {
 }
 
 .about__btn {
-  margin: 0 1.5rem;
+  margin: 1.5rem;
   width: 180px;
-}
-
-.about__buttons {
-  align-items: center;
-  color: var(--color-headings);
-  display: flex;
-  justify-content: center;
-  padding-top: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1264,4 +1259,8 @@ a {
     margin-left: 5rem;
     margin-right: 4rem;
   }
+}
+
+/* Services */
+.services__list--item {
 }
