@@ -1158,6 +1158,10 @@ a {
 
 /* About page */
 
+.about__video-block {
+  padding-bottom: 6rem;
+}
+
 .about__iframe-container {
   display: flex;
   margin: 0;
