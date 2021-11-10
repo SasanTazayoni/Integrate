@@ -231,15 +231,16 @@ a {
   color: var(--color-headings);
 }
 
+.list__item::before {
+  content: url(../images/tick.svg);
+  padding-right: 1rem;
+  transform: scale(125%);
+}
+
 .list__item {
   display: inline-flex;
   padding: 1rem;
   margin: 1rem;
-}
-
-.list--tick {
-  color: var(--color-headings);
-  list-style-image: url(../images/tick.svg);
 }
 
 .list--tick .list__item {
