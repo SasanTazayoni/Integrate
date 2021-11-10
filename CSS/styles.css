@@ -246,12 +246,6 @@ a {
   margin-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .list--tick .list__item {
-    padding-left: 0;
-  }
-}
-
 /* Buttons */
 
 .btn {
@@ -401,6 +395,7 @@ a {
 }
 
 .block--top {
+  padding-bottom: 0;
   padding-top: 12rem;
   text-align: center;
 }
@@ -1203,6 +1198,24 @@ a {
   }
 }
 
+/* Training page */
+
+.training__image {
+  background: url(../images/training_temporary.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .training__image {
+    position: relative;
+  }
+}
+
 /* Services page */
 
 .services__list {
@@ -1212,10 +1225,6 @@ a {
 }
 
 /* FAQ page */
-
-.faq__block {
-  border-bottom: 1px solid lightgrey;
-}
 
 .faq {
   margin: 0 10px;
