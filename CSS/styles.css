@@ -75,7 +75,7 @@ h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   margin: 1rem;
 }
 
@@ -107,7 +107,7 @@ p {
 
 @media screen and (min-width: 1296px) {
   h1 {
-    font-size: 7rem;
+    font-size: 10rem;
   }
 }
 
@@ -232,20 +232,13 @@ a {
 }
 
 .list__item {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 10px;
-  background: lightblue;
-}
-
-.list--inline .list__item {
-  display: inline-block;
-  margin-right: 2rem;
+  display: inline-flex;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .list--tick {
   list-style-image: url(../images/tick.svg);
-  padding-left: 3rem;
 }
 
 .list--tick .list__item {
@@ -390,15 +383,7 @@ a {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media screen and (min-width: 768px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1176,7 +1161,7 @@ a {
   width: 75vw;
 }
 
-/* About */
+/* About page */
 
 .about__iframe-container {
   display: flex;
@@ -1218,7 +1203,15 @@ a {
   }
 }
 
-/* FAQ block */
+/* Services page */
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+/* FAQ page */
 
 .faq__block {
   border-bottom: 1px solid lightgrey;
@@ -1259,8 +1252,4 @@ a {
     margin-left: 5rem;
     margin-right: 4rem;
   }
-}
-
-/* Services */
-.services__list--item {
 }
