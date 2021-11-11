@@ -113,8 +113,18 @@ p {
 
 /* Links */
 
-a {
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+  color: var(--color-tertiary);
   text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-tertiary-hover);
 }
 
 /* Icons */
@@ -131,7 +141,7 @@ a {
 
 .icon--secondary {
   fill: var(--color-secondary);
-  transition: fill 0.25s;
+  transition: fill 0.3s;
 }
 
 .icon--tertiary {
@@ -140,12 +150,12 @@ a {
 
 .icon--white {
   fill: #fff;
-  transition: fill 0.25s;
+  transition: fill 0.3s;
 }
 
 .icon--black {
   fill: black;
-  transition: fill 0.25s;
+  transition: fill 0.3s;
 }
 
 .icon--left {
@@ -627,7 +637,7 @@ a {
   fill: var(--color-secondary);
   height: 60px;
   opacity: 0.6;
-  transition: box-shadow 0.25s, opacity 0.25s;
+  transition: box-shadow 0.3s, opacity 0.3s;
   width: 60px;
 }
 
