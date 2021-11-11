@@ -232,14 +232,13 @@ a {
 }
 
 .list__item::before {
-  content: url(../images/tick.svg);
+  color: var(--color-body);
+  content: "✔";
   padding-right: 1rem;
-  transform: scale(125%);
 }
 
 .list__item {
   display: inline-flex;
-  padding: 1rem;
   margin: 1rem;
 }
 
@@ -1246,12 +1245,17 @@ a {
   line-height: 1rem;
   margin: 0;
   padding-left: 0;
-  text-align: left;
 }
 
-@media screen and (min-width: 1296px) {
-  .services__list .list__item {
-    align-self: center;
+@media screen and (max-width: 360px) {
+  .services__list {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__list {
+    font-size: 1.8rem;
   }
 }
 
@@ -1279,18 +1283,11 @@ a {
 /* Contact page */
 
 .contact__card {
-  padding: 5rem 8rem;
+  padding: 2rem;
 }
 
 .contact__strong {
   font-weight: 600;
-}
-
-.contact__image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
 }
 
 .contact__image {
@@ -1298,4 +1295,29 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+  .contact__card {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    border-left: 2px solid lightgrey;
+  }
+
+  .contact__card {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__card {
+    padding-top: 5rem;
+    padding-left: 8rem;
+    white-space: nowrap;
+  }
 }
