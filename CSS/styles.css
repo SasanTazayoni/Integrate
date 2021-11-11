@@ -486,7 +486,7 @@ a {
   flex-direction: column;
   justify-content: center;
   margin: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 @media screen and (min-width: 470px) {
@@ -1245,6 +1245,17 @@ a {
   line-height: 1rem;
   margin: 0;
   padding-left: 0;
+}
+
+.services__image {
+  background: url(../images/services_temporary.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+  background-position: center;
+  display: block;
+  height: 70vh;
+  width: 100%;
 }
 
 @media screen and (max-width: 360px) {
