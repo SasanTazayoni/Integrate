@@ -457,7 +457,8 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1296px) {
-  .block--top {
+  .block--top,
+  .block--top-castrated {
     padding-top: 20rem;
   }
 }
@@ -1311,6 +1312,11 @@ a:hover {
   font-weight: 600;
 }
 
+.contact__office-hours--heading,
+.contact__office-hours {
+  margin-bottom: 0;
+}
+
 .contact__image {
   align-items: center;
   display: flex;
@@ -1339,6 +1345,16 @@ a:hover {
   .contact__card {
     padding-top: 5rem;
     padding-left: 8rem;
-    white-space: nowrap;
+  }
+
+  .contact__image {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1062px) {
+  .contact__card {
+    padding-top: 4rem;
+    padding-left: 4rem;
   }
 }
