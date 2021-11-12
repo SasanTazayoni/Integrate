@@ -1344,10 +1344,7 @@ a:hover {
 
 .contact__card {
   padding: 2rem;
-<<<<<<< HEAD
   text-align: left;
-=======
->>>>>>> 1f6e2fed870bda8668b5cf363d1c8d4c94897a1a
 }
 
 .contact__strong {
@@ -1366,7 +1363,6 @@ a:hover {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .contact__cancellation-card {
   margin-top: 2rem;
   padding: 2rem 4rem;
@@ -1376,14 +1372,11 @@ a:hover {
   padding-top: 1rem;
 }
 
-=======
->>>>>>> 1f6e2fed870bda8668b5cf363d1c8d4c94897a1a
 .contact__form {
   line-height: 1.5;
   padding: 2rem;
 }
 
-<<<<<<< HEAD
 .contact__form-group {
   margin-bottom: 2rem;
 }
@@ -1393,12 +1386,6 @@ a:hover {
   width: 100%;
 }
 
-=======
-.form-group {
-  margin-bottom: 2rem;
-}
-
->>>>>>> 1f6e2fed870bda8668b5cf363d1c8d4c94897a1a
 .contact__btn-container {
   display: flex;
   justify-content: center;
