@@ -1368,6 +1368,10 @@ a:hover {
   padding: 2rem 4rem;
 }
 
+.contact__cancellation-card > p {
+  text-align: left;
+}
+
 .contact__form-block {
   padding-top: 1rem;
 }
