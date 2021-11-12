@@ -1249,6 +1249,11 @@ a:hover {
   width: 180px;
 }
 
+.about__header {
+  padding-bottom: 6rem;
+  padding-top: 0;
+}
+
 @media screen and (min-width: 1024px) {
   .about__image {
     height: 40vh;
