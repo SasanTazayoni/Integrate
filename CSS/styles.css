@@ -61,6 +61,44 @@ body {
   line-height: 1.5;
 }
 
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 250px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: var(--color-secondary);
+  outline: 0;
+  transition: all 0.3s;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -1322,6 +1360,24 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.contact__form {
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.contact__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__submit-btn {
+  width: 170px;
 }
 
 @media screen and (max-width: 360px) {

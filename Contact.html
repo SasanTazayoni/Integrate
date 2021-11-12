@@ -167,9 +167,9 @@
             <div class="contact__card">
               <p>
                 Your questions may have been answered in the
-                <a href="faq.html">FAQ</a>.
+                <a href="faq.html">FAQ</a>. <br />Please contact me with the
+                details below:
               </p>
-              <p>Please contact me with the details below:</p>
               <p>
                 <span class="contact__strong">Email:</span>
                 <a href="mailto:info@integratetherapy.co.uk"
@@ -197,8 +197,74 @@
 
     <section class="block block--white">
       <div class="container">
-        <p>For any enquiries, please fill out the form below:</p>
-        <form action=""></form>
+        <form
+          class="contact__form"
+          action="https://formspree.io/f/xgergodj"
+          method="POST"
+        >
+          <section>
+            <h2>Enquiries form</h2>
+            <div class="form-group">
+              <label for="fullname">Full name</label>
+              <input
+                id="fullname"
+                type="text"
+                placeholder="Full name"
+                name="name"
+                required
+                minlength="1"
+                maxlength="50"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+                minlength="5"
+                maxlength="30"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contactnumber">Contact number</label>
+              <input
+                id="contactnumber"
+                type="number"
+                placeholder="Contact number"
+                name="contact"
+                required
+                min="0"
+                minlength="7"
+                maxlength="20"
+              />
+            </div>
+            <div class="form-group">
+              <label for="enquiry">Your enquiry</label>
+              <textarea
+                id="enquiry"
+                cols="100"
+                rows="5"
+                placeholder="Your enquiry"
+                name="enquiry"
+                required
+                minlength="10"
+                maxlength="300"
+              >
+              </textarea>
+            </div>
+            <div class="contact__btn-container">
+              <button
+                class="btn btn--secondary contact__submit-btn"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </section>
+        </form>
       </div>
     </section>
 
