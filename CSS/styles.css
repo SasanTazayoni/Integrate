@@ -133,6 +133,12 @@ p {
   body {
     font-size: 1.5rem;
   }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -500,7 +506,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1296px) {
+@media screen and (min-width: 768px) and (max-width: 1295px) {
   .block--top,
   .block--top-castrated {
     padding-top: 20rem;
@@ -560,7 +566,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
   .container--white {
     border-left: 3px solid lightgrey;
   }
@@ -582,7 +588,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container--white {
     border-left: 4px solid lightgrey;
   }
@@ -1120,7 +1126,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
   .testimonial-bullet {
     height: 15px;
     margin: 0 1rem;
@@ -1221,7 +1227,7 @@ a:hover {
 
 @media screen and (max-width: 360px) {
   .footer__item {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1232,7 +1238,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
   .footer__item {
     font-size: 1.8rem;
     padding: 0 1rem;
@@ -1358,7 +1364,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 361px) and (max-width: 768px) {
   .services__list {
     font-size: 1.8rem;
   }
@@ -1522,31 +1528,28 @@ a:hover {
 
 @media screen and (max-width: 360px) {
   .contact__card {
-    font-size: 1.5rem;
     padding: 1rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 361px) and (max-width: 768px) {
   .contact__card {
     font-size: 1.8rem;
+  }
+
+  .contact__cancellation-card {
+    margin-top: 2rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .contact__card {
-    padding-top: 5rem;
-    padding-left: 8rem;
+    padding-top: 4rem;
+    padding-left: 6rem;
   }
 
   .contact__card-image {
     height: 100%;
-  }
-}
-
-@media screen and (max-width: 1062px) {
-  .contact__card {
-    padding-top: 4rem;
-    padding-left: 4rem;
   }
 }
