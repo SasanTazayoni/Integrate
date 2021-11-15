@@ -538,9 +538,29 @@ a:hover {
   padding-top: 6rem;
 }
 
+@media screen and (max-width: 360px) {
+  .container--white {
+    border-left: 2px solid lightgrey;
+  }
+
+  .container--grey {
+    border-left: 2px solid lightgrey;
+  }
+}
+
 @media screen and (min-width: 470px) {
   .container--buttons {
     flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--white {
+    border-left: 3px solid lightgrey;
+  }
+
+  .container--grey {
+    border-left: 3px solid lightgrey;
   }
 }
 
@@ -553,6 +573,16 @@ a:hover {
   .container--grey {
     margin-left: 5rem;
     margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container--white {
+    border-left: 4px solid lightgrey;
+  }
+
+  .container--grey {
+    border-left: 4px solid lightgrey;
   }
 }
 
@@ -1247,11 +1277,6 @@ a:hover {
 .about__btn {
   margin: 1.5rem;
   width: 180px;
-}
-
-.about__header {
-  padding-bottom: 6rem;
-  padding-top: 0;
 }
 
 @media screen and (min-width: 1024px) {
