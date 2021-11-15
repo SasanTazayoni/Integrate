@@ -685,6 +685,15 @@ a:hover {
   transition: all 0.3s;
 }
 
+.nav__item .icon {
+  fill: var(--color-tertiary);
+  height: 2.3rem;
+  width: 2.3rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+  vertical-align: middle;
+}
+
 .nav__item > a:hover,
 .nav__item > a:hover .icon {
   color: var(--color-tertiary-hover);
@@ -1349,6 +1358,82 @@ a:hover {
   }
 }
 
+/* Fees page */
+
+.fees__card {
+  padding: 2rem 4rem;
+  text-align: left;
+}
+
+.fees__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+  .fees__card {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .fees__image {
+    background-image: url(../images/fees__imagesmall.jpg);
+  }
+  .webp .fees__image {
+    background-image: url(../images/fees__imagesmall.webp);
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .fees__image {
+    background-image: url(../images/fees__imagemedium.jpg);
+  }
+  .webp .fees__image {
+    background-image: url(../images/fees__imagemedium.webp);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fees__card {
+    font-size: 1.8rem;
+  }
+
+  .fees__image {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fees__card {
+    padding-top: 5rem;
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fees__image {
+    background-image: url(../images/fees__imagelarge.jpg);
+  }
+  .webp .fees__image {
+    background-image: url(../images/fees__imagelarge.webp);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .fees__image {
+    background-image: url(../images/fees__imagexlarge.jpg);
+  }
+  .webp .fees__image {
+    background-image: url(../images/fees__imagexlarge.webp);
+  }
+}
+
 /* FAQ page */
 
 .faq {
@@ -1386,7 +1471,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.contact__image {
+.contact__card-image {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1437,10 +1522,6 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .contact__container {
-    border-left: 2px solid lightgrey;
-  }
-
   .contact__card {
     font-size: 1.8rem;
   }
@@ -1452,7 +1533,7 @@ a:hover {
     padding-left: 8rem;
   }
 
-  .contact__image {
+  .contact__card-image {
     height: 100%;
   }
 }
