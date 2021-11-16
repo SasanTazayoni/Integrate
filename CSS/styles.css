@@ -1471,8 +1471,12 @@ a:hover {
 /* Fees page */
 
 .fees__card {
-  padding: 2rem 4rem;
-  text-align: left;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fees__card-header {
+  margin-top: 0;
 }
 
 .fees__image {
@@ -1521,8 +1525,7 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   .fees__card {
-    padding-top: 5rem;
-    padding-left: 8rem;
+    padding: 4rem;
   }
 }
 

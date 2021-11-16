@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -161,18 +162,10 @@
       <div class="container">
         <div class="container--white contact__container">
             <div class="fees__card">
+              <h3 class="fees__card-header">The following only applies to individuals:</h3>
               <p>
-                <span class="contact__strong contact__office-hours--heading">
-                    The following only applies to individuals:<br /></span>
-                - The initial assessment is £150 <br />
-                - Follow-up sessions are £80 each
-              </p>
-              <p>
-                <span class="contact__strong contact__office-hours"
-                  >Office hours:<br /></span>
-                Monday - Wednesday: 9AM - 5PM <br />
-                Thursday: 9AM - 3PM <br />
-                Friday: 9AM - 1PM
+                The initial assessment is £150 <br />
+                Follow-up sessions are £80 each
               </p>
             </div>
         </div>
@@ -182,7 +175,7 @@
             Once a session is booked, two working days (48 hours) notice is
             required for cancellations. Otherwise, the full cost of the session
             will be incurred. If you need to cancel or change an appointment,
-            please contact me with the details provided above.
+            please contact me with the details provided on the <a href="contact.html">Contact</a> page.
           </p>
         </div>
       </div>
@@ -237,6 +230,10 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="JS/index.js"></script>
   </body>
 </html>
