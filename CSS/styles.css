@@ -134,6 +134,18 @@ p {
     font-size: 1.5rem;
   }
 
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
   input[type="text"],
   input[type="email"],
   input[type="number"] {
@@ -1560,6 +1572,10 @@ a:hover {
 @media screen and (max-width: 360px) {
   .contact__card {
     padding: 1rem;
+  }
+
+  .contact__cancellation-card {
+    padding: 2rem;
   }
 }
 
