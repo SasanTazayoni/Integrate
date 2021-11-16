@@ -319,6 +319,7 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  width: 180px;
 }
 
 .btn--primary {
@@ -547,7 +548,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   margin: 1.5rem;
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 @media screen and (max-width: 360px) {
@@ -660,7 +661,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .nav__logo {
@@ -787,7 +788,7 @@ a:hover {
   .nav__list-widescreen {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 8rem);
+    grid-template-rows: repeat(2, 7.5rem);
   }
 }
 
@@ -1295,11 +1296,6 @@ a:hover {
   width: 100%;
 }
 
-.about__btn {
-  margin: 1.5rem;
-  width: 180px;
-}
-
 @media screen and (min-width: 1024px) {
   .about__image {
     height: 40vh;
@@ -1318,18 +1314,56 @@ a:hover {
 /* Training page */
 
 .training__image {
-  background: url(../images/training_temporary.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
   background-position: center;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 799px) {
   .training__image {
-    position: relative;
+    background-image: url(../images/trainingsmall.jpg);
+  }
+  .webp .training__image {
+    background-image: url(../images/trainingsmall.webp);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .training__image {
+    background-image: url(../images/trainingmedium.jpg);
+  }
+  .webp .training__image {
+    background-image: url(../images/trainingmedium.webp);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  .training__image {
+    background-image: url(../images/traininglarge.jpg);
+  }
+  .webp .training__image {
+    background-image: url(../images/traininglarge.webp);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .training__image {
+    background-image: url(../images/traininglarge.jpg);
+  }
+  .webp .training__image {
+    background-image: url(../images/traininglarge.webp);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .training__image {
+    background-image: url(../images/trainingxlarge.jpg);
+  }
+  .webp .training__image {
+    background-image: url(../images/trainingxlarge.webp);
   }
 }
 
