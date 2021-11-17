@@ -1436,17 +1436,11 @@ a:hover {
   .services__image {
     background-image: url(../images/servicessmall.jpg);
   }
-  .webp .services__image {
-    background-image: url(../images/servicessmall.webp);
-  }
 }
 
 @media screen and (min-width: 768px) {
   .services__image {
     background-image: url(../images/servicesmedium.jpg);
-  }
-  .webp .services__image {
-    background-image: url(../images/servicesmedium.webp);
   }
 }
 
@@ -1454,17 +1448,11 @@ a:hover {
   .services__image {
     background-image: url(../images/serviceslarge.jpg);
   }
-  .webp .services__image {
-    background-image: url(../images/serviceslarge.webp);
-  }
 }
 
 @media screen and (min-width: 1800px) {
   .services__image {
     background-image: url(../images/servicesxlarge.jpg);
-  }
-  .webp .services__image {
-    background-image: url(../images/servicesxlarge.webp);
   }
 }
 
