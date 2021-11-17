@@ -1635,6 +1635,10 @@ a:hover {
   width: 170px;
 }
 
+.contact-map__container {
+  border: 2px solid lightgrey;
+}
+
 @media screen and (max-width: 360px) {
   .contact__card {
     padding: 1rem;
@@ -1645,7 +1649,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 361px) and (max-width: 768px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
   .contact__card {
     font-size: 1.8rem;
   }
@@ -1653,6 +1657,12 @@ a:hover {
   .contact__cancellation-card {
     margin-top: 2rem;
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-map__block {
+    padding: 3rem 1rem;
   }
 }
 
