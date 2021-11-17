@@ -1635,10 +1635,6 @@ a:hover {
   width: 170px;
 }
 
-.contact-map__container {
-  border: 2px solid lightgrey;
-}
-
 @media screen and (max-width: 360px) {
   .contact__card {
     padding: 1rem;
