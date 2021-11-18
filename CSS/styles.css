@@ -510,6 +510,10 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .block {
+    padding: 3rem 2rem;
+  }
+
   .block--regular {
     text-align: center;
   }
@@ -657,7 +661,7 @@ a:hover {
   box-shadow: 1rem 0 3rem #dcdcdc, -1rem 0 3rem #dcdcdc;
 }
 
-.nav__button {
+.nav__btn {
   font-size: 1.5rem;
   height: 60px;
   width: 150px;
@@ -836,7 +840,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1600px) {
-  .nav__button {
+  .nav__btn {
     margin: 1rem 2rem;
   }
 }
