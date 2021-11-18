@@ -389,14 +389,6 @@ a:hover {
   padding-left: 1rem;
 }
 
-.btn--long:hover {
-  transform: scale(1.015);
-}
-
-.icon-btn {
-  display: inline-block;
-}
-
 /* Inputs */
 
 .input {
@@ -484,6 +476,10 @@ a:hover {
   text-align: left;
 }
 
+.block--regular-btn {
+  padding-left: 2rem;
+}
+
 .block--secondary {
   background: var(--color-secondary);
   color: var(--color-headings);
@@ -513,15 +509,13 @@ a:hover {
   padding-top: 6rem;
 }
 
-@media screen and (max-width: ) @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .block--regular {
     text-align: center;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .block__content__btn {
-    padding-left: 2rem;
+  .block--regular-btn {
+    padding-left: 0;
   }
 }
 
