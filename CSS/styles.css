@@ -513,6 +513,12 @@ a:hover {
   padding-top: 6rem;
 }
 
+@media screen and (max-width: ) @media screen and (max-width: 767px) {
+  .block--regular {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .block__content__btn {
     padding-left: 2rem;
