@@ -476,10 +476,6 @@ a:hover {
   text-align: left;
 }
 
-.block--regular-btn {
-  padding-left: 2rem;
-}
-
 .block--secondary {
   background: var(--color-secondary);
   color: var(--color-headings);
@@ -503,6 +499,7 @@ a:hover {
   align-items: center;
   display: grid;
   justify-items: center;
+  margin-left: 3rem;
 }
 
 .welcome__block {
@@ -510,16 +507,16 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .block {
-    padding: 3rem 2rem;
+  .block-beaneath-title {
+    padding-top: 3rem;
   }
 
   .block--regular {
     text-align: center;
   }
 
-  .block--regular-btn {
-    padding-left: 0;
+  .block__anchor {
+    margin-left: 1rem;
   }
 }
 
@@ -566,6 +563,10 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
+  .container--large {
+    padding: 2rem 0;
+  }
+
   .container--white {
     border-left: 2px solid lightgrey;
   }
@@ -1572,6 +1573,12 @@ a:hover {
 
 .faq__buttons {
   padding-top: 4rem;
+}
+
+@media screen and (min-width: 361px) and (max-width: 767px) {
+  .faq {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
