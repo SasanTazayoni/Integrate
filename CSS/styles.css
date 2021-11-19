@@ -1613,6 +1613,7 @@ a:hover {
 }
 
 .contact__form-block {
+  padding-bottom: 1rem;
   padding-top: 1rem;
 }
 
