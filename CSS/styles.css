@@ -67,7 +67,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 textarea {
   border: 2px solid lightgrey;
   border-radius: 5px;
@@ -76,13 +76,13 @@ textarea {
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="tel"] {
   width: 250px;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="number"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
   border-color: var(--color-secondary);
   outline: 0;
@@ -148,7 +148,7 @@ p {
 
   input[type="text"],
   input[type="email"],
-  input[type="number"] {
+  input[type="tel"] {
     width: 100%;
   }
 }
@@ -1590,6 +1590,8 @@ a:hover {
 /* Contact page */
 
 .contact__card {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   text-align: left;
 }
@@ -1676,8 +1678,8 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   .contact__card {
-    padding-top: 4rem;
-    padding-left: 6rem;
+    justify-content: center;
+    padding: 3rem;
   }
 
   .contact__card-image {
