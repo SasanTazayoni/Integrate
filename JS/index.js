@@ -9,7 +9,7 @@ collapsibles.forEach((item) =>
 
 const checkWebp = {
   init() {
-    this.check_webp_feature('alpha', (f, supported) => {
+    this.checkWebpFeature('alpha', (f, supported) => {
       if (supported) document.body.classList.add('webp');
     })
   },
@@ -27,7 +27,7 @@ const checkWebp = {
         const result = (img.width > 0) && (img.height > 0);
         callback(feature, result);
     };
-    img.onError = function () {
+    img.onerror = function () {
         callback(feature, false);
     };
     img.src = "data:image/webp;base64," + kTestImages[feature];
