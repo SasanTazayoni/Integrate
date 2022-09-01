@@ -7,24 +7,24 @@ collapsibles.forEach((item) =>
   })
 );
 
-const checkWebp = {
+const CheckWebp = {
   init() {
-    this.checkWebpFeature('alpha', (f, supported) => {
+    this.check_webp_feature('alpha', (f, supported) => {
       if (supported) document.body.classList.add('webp');
     })
   },
 
-  checkWebpFeature(feature, callback) {
+  check_webp_feature(feature, callback) {
     // 
-    const kTestImages = {
+    var kTestImages = {
         lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
         lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
         alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
         animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
     };
-    const img = new Image();
+    var img = new Image();
     img.onload = function () {
-        const result = (img.width > 0) && (img.height > 0);
+        var result = (img.width > 0) && (img.height > 0);
         callback(feature, result);
     };
     img.onerror = function () {
@@ -33,6 +33,8 @@ const checkWebp = {
     img.src = "data:image/webp;base64," + kTestImages[feature];
   }
 };
+
+CheckWebp.init();
 
 checkWebp.init();
 
