@@ -10,7 +10,9 @@ collapsibles.forEach((item) =>
 const checkWebp = {
   init() {
     this.checkWebpFeature('alpha', (f, supported) => {
-      if (supported) document.body.classList.add('webp');
+      let bodyClass = "nowebp";
+      if (supported) bodyClass = "webp";
+      document.body.classList.add(bodyClass);
     })
   },
 

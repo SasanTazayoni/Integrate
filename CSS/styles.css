@@ -909,19 +909,19 @@ a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .hero__container {
+  .nowebp.hero__container {
     background-image: url(../images/herobgsmall.jpg);
   }
-  .webp .hero__container {
+  .webp.hero__container {
     background-image: url(../images/herobgsmall.webp);
   }
 }
 
 @media screen and (min-width: 721px) {
-  .hero__container {
+  .nowebp.hero__container {
     background-image: url(../images/herobgmedium.jpg);
   }
-  .webp .hero__container {
+  .webp.hero__container {
     background-image: url(../images/herobgmedium.webp);
   }
 }
@@ -945,16 +945,16 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .nowebp.hero__container {
     background-image: url(../images/herobglarge.jpg);
   }
-  .webp .hero__container {
+  .webp.hero__container {
     background-image: url(../images/herobglarge.webp);
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .hero__container {
+  .nowebp.hero__container {
     background-image: url(../images/herobgxlarge.jpg);
   }
   .webp .hero__container {
@@ -979,7 +979,7 @@ a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .background__image {
+  .nowebp .background__image {
     background-image: url(../images/childsmall.jpg);
   }
   .webp .background__image {
@@ -988,7 +988,7 @@ a:hover {
 }
 
 @media screen and (min-width: 721px) {
-  .background__image {
+  .nowebp .background__image {
     background-image: url(../images/childmedium.jpg);
   }
   .webp .background__image {
@@ -1003,7 +1003,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .background__image {
+  .nowebp.background__image {
     background-image: url(../images/childlarge.jpg);
   }
   .webp .background__image {
@@ -1012,7 +1012,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1800px) {
-  .background__image {
+  .nowebp.background__image {
     background-image: url(../images/childxlarge.jpg);
   }
   .webp .background__image {
@@ -1379,7 +1379,7 @@ a:hover {
 }
 
 @media screen and (max-width: 799px) {
-  .training__image {
+  .nowebp.training__image {
     background-image: url(../images/trainingsmall.jpg);
   }
   .webp .training__image {
@@ -1388,7 +1388,7 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .training__image {
+  .nowebp.training__image {
     background-image: url(../images/trainingmedium.jpg);
   }
   .webp .training__image {
@@ -1397,7 +1397,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
-  .training__image {
+  .nowebp.training__image {
     background-image: url(../images/traininglarge.jpg);
   }
   .webp .training__image {
@@ -1406,7 +1406,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .training__image {
+  .nowebp.training__image {
     background-image: url(../images/traininglarge.jpg);
   }
   .webp .training__image {
@@ -1415,7 +1415,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1800px) {
-  .training__image {
+  .nowebp.training__image {
     background-image: url(../images/trainingxlarge.jpg);
   }
   .webp .training__image {
@@ -1520,7 +1520,7 @@ a:hover {
 }
 
 @media screen and (min-width: 721px) {
-  .fees__image {
+  .nowebp.fees__image {
     background-image: url(../images/fees__imagemedium.jpg);
   }
   .webp .fees__image {
@@ -1548,7 +1548,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1800px) {
-  .fees__image {
+  .nowebp.fees__image {
     background-image: url(../images/fees__imagexlarge.jpg);
   }
   .webp .fees__image {
