@@ -318,7 +318,7 @@ a:hover {
 
 .btn {
   align-items: center;
-  border-radius: 40px;
+  border-radius: 5px;
   border: 0;
   box-shadow: 0rem 0rem 20px #acacac;
   cursor: pointer;
