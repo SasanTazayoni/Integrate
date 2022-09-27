@@ -381,7 +381,7 @@ a:hover {
 .btn--primary:hover,
 .btn--secondary:hover,
 .btn--tertiary:hover {
-  box-shadow: 0rem 0rem 20px grey;
+  box-shadow: 0rem 0rem 15px grey;
   transform: scale(1.15);
 }
 
