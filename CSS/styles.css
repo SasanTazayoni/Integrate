@@ -320,7 +320,7 @@ a:hover {
   align-items: center;
   border-radius: 5px;
   border: 0;
-  box-shadow: 0rem 0rem 20px #acacac;
+  box-shadow: 0rem 0rem 10px #acacac;
   cursor: pointer;
   display: inline-flex;
   font-size: 1.5rem;
