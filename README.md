@@ -1,6 +1,6 @@
 # Integrate Therapy
 
-Simon's website (Therapy service)
+Simon's website (Therapy service) - To be updated soon
 
 ![HTML](tech/html.png) ![CSS](tech/css.png) ![Javascript](tech/javascript.png)
 
